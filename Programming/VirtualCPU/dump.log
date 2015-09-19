@@ -1,0 +1,265 @@
+
+
+$$$$$ Date: Mon Apr 27 13:51:03 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x21e3010:
+The contents of the registers at address 0x0x21e53a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x21e33a4:
+9 21 10 27 21 24 21 11 21 1 16 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:52:43 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1e60010:
+The contents of the registers at address 0x0x1e623a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x1e603a4:
+9 21 10 27 21 24 21 11 21 1 16 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:55:08 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1bc9010:
+The contents of the registers at address 0x0x1bcb3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x1bc93a4:
+9 21 10 1 21 2 24 21 11 21 100 17 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:55:15 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0xec9010:
+The contents of the registers at address 0x0xecb3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0xec93a4:
+9 21 10 1 21 2 24 21 11 21 100 17 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:56:02 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x23bc010:
+The contents of the registers at address 0x0x23be3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x23bc3a4:
+9 21 100 3 21 2 24 21 11 21 4 16 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:57:09 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x14ee010:
+The contents of the registers at address 0x0x14f03a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x14ee3a4:
+9 21 1 7 21 2 24 21 11 21 30000 17 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:57:52 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0xaf0010:
+The contents of the registers at address 0x0xaf23a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0xaf03a4:
+9 21 32768 5 21 2 24 21 11 21 30000 17 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 13:58:36 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1b22010:
+The contents of the registers at address 0x0x1b243a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x1b223a4:
+9 21 32768 5 21 2 24 21 11 21 2 16 3 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:00:12 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1461010:
+The contents of the registers at address 0x0x14633a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x14613a4:
+9 21 32768 13 21 9 22 34 13 22 24 21 12 21 24 21 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:01:50 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x13d3010:
+The contents of the registers at address 0x0x13d53a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x13d33a4:
+29 29 25 21 13 21 25 21 13 21 12 21 24 21 12 21 24 21 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:08 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x8e0010:
+The contents of the registers at address 0x0x8e23a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x8e03a4:
+29 29 25 21 13 21 25 21 13 21 12 21 24 21 12 21 24 21 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:46 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1521010:
+The contents of the registers at address 0x0x15233a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x15213a4:
+29 29 25 21 13 21 25 21 13 21 12 21 24 21 12 21 24 21 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:59 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x2259010:
+The contents of the registers at address 0x0x225b3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x22593a4:
+29 29 13 21 15 2 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:59 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x2259010:
+The contents of the registers at address 0x0x225b3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x22593a4:
+29 29 13 21 15 2 
+ProgramCounter = 3 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:59 2015
+ 
+-----> Stack overflow  
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:02:59 2015
+ 
+|====> Dump stack: 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 14:04:17 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0xeb9010:
+The contents of the registers at address 0x0xebb3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0xeb93a4:
+29 29 12 21 24 21 15 2 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 15:12:12 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1afd010:
+The contents of the registers at address 0x0x1aff3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x1afd3a4:
+29 29 14 7 15 2 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Mon Apr 27 15:13:59 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x1d88010:
+The contents of the registers at address 0x0x1d8a3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x1d883a4:
+29 29 14 7 15 2 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:45:35 2015
+ 
+-----> Unknown error! 
+Processor at address 0x0x159b010:
+The contents of the registers at address 0x0x159d3a0:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+The contents of the RAM at address 0x0x159b3a4:
+29 29 14 7 15 2 
+ProgramCounter = 0 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:52:17 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:52:47 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:52:47 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:52:48 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:53:13 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 
+
+$$$$$ Date: Sun Sep 13 02:58:55 2015
+ 
+-----> Incorrect format bin file or size = 0! 
+
+************************************************************************ 

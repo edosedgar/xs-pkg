@@ -1,0 +1,84 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include "VirtualCPU.h"
+
+//==============================================================
+/*!
+ *     ASSERT macro
+ *
+ *     \brief  This macro show error if condition is false \n
+ *             This macro works if DEBUG defined!
+ *     \param  Condition
+ *     \return Abort program or do nothing.
+ */
+//==============================================================
+
+#define DEBUG
+
+#ifdef DEBUG
+    #define ASSERT( cond )                       \
+        if ( ! ( cond ) )                        \
+        {                                        \
+            printf ( "FAIL %s in %s, %s ( %d )", \
+            #cond, __PRETTY_FUNCTION__,          \
+            __FILE__, __LINE__ );                \
+            abort();                             \
+        }
+#else
+    #define ASSERT( cond ) ;
+#endif
+
+
+/****************************************************************/
+void StartProcessor ( CPU_t* Proccesor );
+/****************************************************************/
+
+int main ( int argc, char* argv[] )
+{
+	//*********************************************************
+    CPU_t* EmCPU = CPU_Create ( MaxSizeStack );
+	//**********************************************************
+    if ( argc > 1 )
+    {
+        if ( ReadProgramToRAM ( EmCPU, argv[1] ) != 0 )
+        {
+            CPU_Dump ( EmCPU );
+            return 0;
+        }
+    } else
+    {
+        if ( CPU_Destroy ( EmCPU ) != 0 ) CPU_Dump ( EmCPU );
+        return 0;
+    }
+	//*********************************************************
+    StartProcessor ( EmCPU );
+	//**********************************************************
+    if ( CPU_Destroy ( EmCPU ) != 0 ) CPU_Dump ( EmCPU );
+    return 0;
+}
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+void StartProcessor ( CPU_t* Proccesor )
+{
+    int ResultOperation = 0;
+    while ( ResultOperation != END )
+    {
+		//perror ("ggggg");
+        ResultOperation = CPU_DoCommand ( Proccesor, Proccesor->RAM[Proccesor->ProgramCounter] );
+		//getchar();
+		//perror ( "f");
+		//printf ( "%d", Proccesor->RAM[0] );
+        if ( ResultOperation == -1 )
+        {
+            CPU_Dump ( Proccesor );
+            ResultOperation = END;
+        }
+        Proccesor->ProgramCounter++;
+    }
+}
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/

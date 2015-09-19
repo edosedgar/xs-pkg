@@ -1,0 +1,127 @@
+#!/usr/bin/python
+
+import sys
+import os
+import errno
+import hashlib
+import urllib
+
+OUTPATH=os.path.expanduser("~")+"/MiptBitches/"
+STARTPOINT=0
+ENDPOINT=0
+
+# ************* Write what you must do ****************************************
+if len(sys.argv) == 1:
+	print "No arguments. See help (mipthot -h)."
+	sys.exit(1)
+# *****************************************************************************
+
+# ************* Print help ****************************************************
+if len(sys.argv) == 2 and (sys.argv)[1] == "-h":
+	print "\n******************* MiptHot v1 help: **********************"
+	print "*                                                         *"                                 
+	print "*                                                         *"
+	print "* -o ---> Output directory for save of photos (default:   *"
+	print "*         ~/MiptBitches)                                  *"
+	print "*                                                         *"
+	print "* -s ---> Start point in photos list (default: 0)         *"
+	print "*                                                         *"
+	print "* -e ---> End point in photos list (default: 0)           *"
+	print "*                                                         *"
+	print '\033[94m'+"***********************************************************"
+	print "*                                                         *"
+	print "* Required program for working: wget                      *"
+	print "*                                                         *"
+	print "***********************************************************"
+	print '\033[91m'+"*                                                         *"
+	print "* Script is written on python 2.7 by EdOS at 07.09.2015   *"
+	print "*                                                         *"
+	print "***********************************************************\n"+'\033[0m'
+	sys.exit(0)
+# *****************************************************************************
+
+# ************* Read parameters and check their *******************************
+PARFLAG=False
+
+if len(sys.argv) >= 2:
+	for index,current in enumerate(sys.argv):
+		if current == "-h":
+			print "For getting help use 'dvkmusic -h'"
+			sys.exit(0)
+		elif current == "-o":
+			if index+1 >= len(sys.argv):
+				print "Enter outpath (after -o)."
+				sys.exit(1)
+			OUTPATH = sys.argv[index+1]
+			PARFLAG=True
+			if not os.path.isdir(OUTPATH):
+				print "Output path on directory does not exist. Check path."
+				sys.exit(1)
+		elif current == "-s":
+			if index+1 >= len(sys.argv):
+				print "Enter start point (after -s)."
+				sys.exit(1)
+			STARTPOINT=int(sys.argv[index+1])
+			PARFLAG=True
+			if STARTPOINT <= 0:
+				print "Start point number uncorrect!"
+				sys.exit(1)
+		elif current == "-e":
+			if index+1 >= len(sys.argv):
+				print "Enter end point (after -e)."
+				sys.exit(1)
+			ENDPOINT=int(sys.argv[index+1])
+			PARFLAG=True
+			if ENDPOINT <= 0:
+				print "End point number uncorrect!"
+				sys.exit(1)
+		else:
+			if index >= 1 and PARFLAG == False:
+				print "Unknown parameter",current
+				exit(1)
+			PARFLAG=False
+
+if STARTPOINT == 0 or ENDPOINT == 0:
+	print "Do not set start or end point."
+	sys.exit(1)
+# *****************************************************************************
+
+# 1. Create output directory, skip if exist
+try:
+	os.makedirs( OUTPATH )
+except OSError as exc:
+	if exc.errno == errno.EEXIST and os.path.isdir( OUTPATH ):
+		pass
+	else: 
+		raise
+
+# ************** Sort out all numbers and send to MD5 hash ********************
+# ************ example /xxx/fuxxxxxxxxxxxxxxxxxxxxxxxxxx.jpg ******************
+
+INITLINK="https://mipt.ru/upload/iblock/"
+COUNTER = 0
+BASEFILE = "BaseFile.txt"
+
+FDESCRIPTOR = open ( OUTPATH + BASEFILE, 'w' )
+
+print "Generating base of photos... Please, wait."
+for predicate in range(4096):
+	for i in range(STARTPOINT,ENDPOINT+1):
+		hash_object = hashlib.md5(str(i))
+		TEMPPREDICATE = hex(predicate)[2:5:1]
+		if len(TEMPPREDICATE) == 1:
+			TEMPPREDICATE = "00" + TEMPPREDICATE
+		elif len(TEMPPREDICATE) == 2:
+			TEMPPREDICATE = "0" + TEMPPREDICATE
+		FINLINK = INITLINK + TEMPPREDICATE + "/" + "fu" +  hash_object.hexdigest() + ".jpg"
+		FDESCRIPTOR.write ( FINLINK + "\n" )
+		
+FDESCRIPTOR.close()		
+
+# *****************************************************************************
+
+# *********** Start wget ******************************************************
+print "Downloading photos... Please, wait (You can check directory from time to time)."
+os.system("wget -w 0.01 -nc -i " + OUTPATH + BASEFILE + " -P " + OUTPATH ) #+ " > /dev/null 2>&1" )
+# *****************************************************************************
+

@@ -1,0 +1,41 @@
+# STM32F4 assembler project
+
+clean:
+	setterm -foreground red
+	>>***************_Removing_all_files_***************
+	rm -f ./*.out
+	rm -f ./*.o
+	rm -f ./*.S~
+	rm -f ./*.bin
+	rm -f ./*.elf
+	rm -f ./*.lst
+	>**************************************************
+	setterm -foreground default
+
+bin: main.elf
+	arm-none-eabi-objcopy -O binary main.elf main.bin
+	>*********************************************************
+	setterm -foreground default
+
+main.elf: main.o mem.ld
+	arm-none-eabi-ld -T mem.ld -o main.elf main.o
+
+main.o: main.S
+	setterm -foreground green
+	>***************_STM32F4_assembler_compile_***************
+	arm-none-eabi-as -mcpu=cortex-m4 -mthumb -o main.o main.S
+
+flash: main.bin
+	setterm -foreground blue
+	>***************_Writing_program_to_STM32F4_flash_***************
+	st-flash write main.bin 0x08000000
+	>****************************************************************
+	setterm -foreground default
+
+erase:
+	setterm -foreground red
+	>***************_Erasing_device_***************
+	st-flash erase
+	>**********************************************
+	setterm -foreground default
+

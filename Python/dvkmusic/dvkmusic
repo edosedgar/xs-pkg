@@ -1,0 +1,121 @@
+#!/usr/bin/python
+
+import sys
+import os
+import errno
+
+SOURCEPATH=""
+OUTPATH=os.path.expanduser("~")+"/DVKMusic/"
+TEXTFILE="MusicList.txt"
+TMPTEXTFILE="/tmp/vkmusiclist"
+STARTPOINT=1
+ENDPOINT=0
+
+# ************* Write what you must do ****************************************
+if len(sys.argv) == 1:
+	print "No arguments. See help (dvkmusic -h)."
+	sys.exit(1)
+# *****************************************************************************
+
+# ************* Print help ****************************************************
+if len(sys.argv) == 2 and (sys.argv)[1] == "-h":
+	print "\n******************* DVKMusic v1 help: *********************"
+	print "*                                                         *"                                 
+	print "* -i ---> Source .html file path (vk.com/audiosXXXXXXXXX) *"
+	print "*                                                         *"
+	print "* -o ---> Output dir for save of list with links on the   *"
+	print "*         tracks and of music (default: ~/DVKMusic)       *"
+	print "*                                                         *"
+	print "* -s ---> Start point in musics list (default: 1)         *"
+	print "*                                                         *"
+	print "* -e ---> End point in musics list (default: sizeof list) *"
+	print "*                                                         *"
+	print '\033[94m'+"***********************************************************"
+	print "*                                                         *"
+	print "* Required program for working: awk, wget, wc             *"
+	print "*                                                         *"
+	print "***********************************************************"
+	print '\033[91m'+"*                                                         *"
+	print "* Script is written on python 2.7 by EdOS at 19.08.2015   *"
+	print "*                                                         *"
+	print "***********************************************************\n"+'\033[0m'
+	sys.exit(0)
+# *****************************************************************************
+#print sys.argv
+
+# ************* Read parameters and check their *******************************
+PARFLAG=False
+
+if len(sys.argv) >= 2:
+	for index,current in enumerate(sys.argv):
+		if current == "-h":
+			print "For getting help use 'dvkmusic -h'"
+			sys.exit(0)
+		elif current == "-i":
+			SOURCEPATH = sys.argv[index+1]
+			PARFLAG=True
+			if not os.path.isfile(SOURCEPATH):
+				print "Source .html file does not exist. Check path."
+				sys.exit(1)
+		elif current == "-o":
+			OUTPATH = sys.argv[index+1]
+			PARFLAG=True
+			if not os.path.isdir(OUTPATH):
+				print "Output path on directory does not exist. Check path."
+				sys.exit(1)
+		elif current == "-s":
+			STARTPOINT=int(sys.argv[index+1])
+			PARFLAG=True
+			if STARTPOINT <= 0:
+				print "Start point number uncorrect!"
+				sys.exit(1)
+		elif current == "-e":
+			ENDPOINT=int(sys.argv[index+1])
+			PARFLAG=True
+			if ENDPOINT <= 0:
+				print "End point number uncorrect!"
+				sys.exit(1)
+		else:
+			if index >= 1 and PARFLAG == False:
+				print "Unknown parameter",current
+			PARFLAG=False
+
+if SOURCEPATH == "":
+	print "Do not set input file."
+	sys.exit(1)
+# *****************************************************************************
+
+# ************ Get list of vk tracks ******************************************
+#os.system("sed -i \'s/https/http/\' "+SOURCEPATH)
+os.system("awk \'/mp3/ && ( /http:/ || /https:/ ) { print $3 }\' "+SOURCEPATH+" | awk \'BEGIN {FS=\"?extra\"} { print substr($1,8,length($1)) }\' > "+ TMPTEXTFILE)
+# *****************************************************************************
+
+# ************ Set ENDPOINT as size of list and check *************************
+if ENDPOINT == 0:
+	ENDPOINT = int(os.popen("wc -l "+TMPTEXTFILE).read().split()[0])
+
+if STARTPOINT > ENDPOINT:
+	print "Start point more than end point. Check points."
+	sys.exit(1)
+# *****************************************************************************
+
+# ************ Create final list **********************************************
+# 1. Create output directory, skip if exist
+try:
+	os.makedirs( OUTPATH )
+except OSError as exc:
+	if exc.errno == errno.EEXIST and os.path.isdir( OUTPATH ):
+		pass
+	else: 
+		raise
+# 2. Execute awk
+os.system("awk \'{ if ( NR >= " + str(STARTPOINT) + " && NR <= "+ str(ENDPOINT)+" ) print  $1}\' " + TMPTEXTFILE+" > " + OUTPATH+TEXTFILE )
+# 3. Delete temp file
+os.remove(TMPTEXTFILE)
+# *****************************************************************************
+
+# *********** Start wget ******************************************************
+os.system("wget -nc -i " + OUTPATH + TEXTFILE+" -P "+OUTPATH )
+# *****************************************************************************
+
+
