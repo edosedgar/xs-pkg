@@ -7,12 +7,13 @@
 #include <sys/stat.h>
 #include <sys/times.h>
 #include <fcntl.h>
+#include <limits.h>
 
 #define RX 1
 #define TX 2
 
 const char* pCommonFIFO = "/tmp/pipeCommon.pipe";
-const int BufferSize = 4096;
+const int BufferSize = PIPE_BUF;
 
 int OptHandler (int argc, char* argv[], char** FileName);
 int ReceiverModule(void);
@@ -130,42 +131,35 @@ int OptHandler (int argc, char* argv[], char** FileName) {
 int ReceiverModule(void){
 	//Create common fifo or use exist
 	mkfifo( pCommonFIFO, 0666 );
-	//Get my id, convert to string and print out own info
+	//Generate DataPipe path, create buffers and other
 	char* Buffer = (char*) calloc ( BufferSize, sizeof(*Buffer) );
+	char* pDataFIFO = (char*) calloc ( 255, sizeof(*pDataFIFO) );
 	int ReceiverPID = getpid();
 	sprintf( Buffer, "%d", ReceiverPID );
+	sprintf( pDataFIFO, "/tmp/pipe%d.pipe", ReceiverPID );
 	fprintf( stderr, "Trying to find a transmitter(MyPID: %s).\n", Buffer );
 	//Trying to find FIFO channel (if fifo doesn't exist then wait)
 	int CommonFIFO = open( pCommonFIFO, O_WRONLY );
 	//Send my id to some transmitter
 	write( CommonFIFO, Buffer, BufferSize );
-	//Generate data pipe path
-	char* pDataFIFO = (char*) calloc ( 255, sizeof(*pDataFIFO) );
-	sprintf( pDataFIFO, "/tmp/pipe%d.pipe", ReceiverPID );
-	int DataFIFO = -1;
-	free(pDataFIFO);
-	//Trying to find FIFO and to open it
-	while (( DataFIFO = open( pDataFIFO,O_RDONLY ) )== -1 )
-		usleep (100);
+	//Create, trying to find FIFO and to open it
+	mkfifo ( pDataFIFO, 0666 );
+	int DataFIFO = open( pDataFIFO,O_RDONLY );
+	free( pDataFIFO );
 	//Try read from data fifo
 	read( DataFIFO, Buffer, BufferSize );
 	//Tell that connection established and read transmitter PID
 	int TransmitterPID = 0;
-	long int FileLength = 0;
-	sscanf( Buffer, "%d %ld", &TransmitterPID, &FileLength );
+	sscanf( Buffer, "%d", &TransmitterPID );
 	fprintf(stderr, "Connection established with transmitter(PID: %d).\n", \
 				   	TransmitterPID);
-	fprintf(stderr, "File size %ldB.\n", FileLength) ;
 	//Start receive
 	int csize = 0;
-	long int SumSize = 0;
 	while ( ( csize = read( DataFIFO, Buffer, BufferSize ) ) > 0 ) {
+        //fprintf(stderr,"Block %dB received.\n", csize);
+        //sleep(1)
 		write(STDOUT_FILENO, Buffer, csize );
-		SumSize += csize;
 	}
-	//Check size
-	if ( SumSize != FileLength )
-		fprintf( stderr, "Transmitter terminated.\n" );
 	//Free memory and close descriptors
 	free(Buffer);
 	close(CommonFIFO);
@@ -179,62 +173,54 @@ int ReceiverModule(void){
 
 int TransmitterModule(char* FileName){
 	//Open input file
-	FILE* FileD= fopen(FileName, "r");
-	if (FileD == NULL ) {
+	int FileD= open(FileName, O_RDONLY);
+	if (FileD == -1 ) {
 		fprintf(stderr, "File doesn't exist.\n");
 		return -1;	
 	}
-	//Create buffer for other workes
+	//Create buffers and read myPID and print out and create fifo
 	char* Buffer = (char*) calloc ( BufferSize, sizeof(*Buffer) );
-	//Read my PID and print out
+	char* pDataFIFO = (char*) calloc ( 255, sizeof(*pDataFIFO) );
+	mkfifo(pCommonFIFO, 0666);
 	int TransmitterPID = getpid();	
 	fprintf( stderr, "Trying to find a receiver(MyPID: %d).\n", TransmitterPID);
-	//Create common fifo or use exist
-	mkfifo(pCommonFIFO, 0666);
+    //Try to open common FIFO
 	int CommonFIFO = open ( pCommonFIFO, O_RDONLY );
-	//Wait PID from some receiver
-	read (CommonFIFO, Buffer, BufferSize );
+	//Read PID from some receiver
+	if ( read (CommonFIFO, Buffer, BufferSize ) == 0 ) {
+		//fprintf ( stderr, "Copy of program already started.\n" );
+		return -1;
+	}
+    //close( CommonFIFO ); //!!!
 	fprintf(stderr, "Connection established with receiver(PID: %s).\n", Buffer);
 	int ReceiverPID = 0;
 	sscanf ( Buffer, "%d", &ReceiverPID );
 	//Generate path for FIFO, that redirection all data to receiver
-	char* pDataFIFO = (char*) calloc ( 255, sizeof(*pDataFIFO) );
 	sprintf( pDataFIFO, "/tmp/pipe%d.pipe", ReceiverPID );
 	mkfifo( pDataFIFO, 0666 );
 	int DataFIFO =  open ( pDataFIFO, O_WRONLY );
 	free(pDataFIFO);
-	//Compute file size
-	fseek ( FileD, 0, SEEK_END );
-	long int FileLength = ftell ( FileD );
-	rewind ( FileD );
 	//Send information packet to receiver
-	sprintf( Buffer, "%d %ld", TransmitterPID, FileLength );
+	sprintf( Buffer, "%d", TransmitterPID );
 	write( DataFIFO, Buffer, BufferSize );
 	//Send file
-	int CurrentBuf = 0;
-	if ( FileLength >= BufferSize ) {
-		CurrentBuf = BufferSize;
-		FileLength -= CurrentBuf;
-	} else
-		CurrentBuf = FileLength;
-
-	while ( fread( Buffer, CurrentBuf, sizeof(char), FileD ) > 0 ) {
-		write(DataFIFO, Buffer, CurrentBuf);
-		//sleep(1);
-		//fprintf(stderr, "ok.\n");
-		if ( FileLength >= BufferSize ) {
-			CurrentBuf = BufferSize;
-			FileLength -= CurrentBuf;
-		} else
-			CurrentBuf = FileLength;	 
+    int csize = 0;
+	while ( ( csize = read( FileD, Buffer, BufferSize ) ) > 0 ) {
+        //fprintf(stderr, "Block %dB transmitted.\n", csize);
+        //sleep(1);
+		write(DataFIFO, Buffer, csize);
 	}
 	//Free decriptors and memory
 	free( Buffer );
 	close( CommonFIFO );
 	close( DataFIFO );
-	fclose( FileD );
+	close( FileD );
 	return 0;
 }
+
+//*****************************************************************************
+//*****************************************************************************
+//*****************************************************************************
 
 //*****************************************************************************
 //*****************************************************************************
