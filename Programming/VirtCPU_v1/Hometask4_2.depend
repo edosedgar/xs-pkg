@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1415049971 source:c:\users\edgaradmin\documents\repositories\informatic\hometask4_2\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"VirtualCPU.h"
+
+1415055842 c:\users\edgaradmin\documents\repositories\informatic\hometask4_2\virtualcpu.h
+	"MyStack.h"
+
+1414751568 c:\users\edgaradmin\documents\repositories\informatic\hometask4_2\mystack.h
+
+1414758626 source:c:\users\edgaradmin\documents\repositories\informatic\hometask4_2\mystack.cpp
+	"MyStack.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+
+1415056097 source:c:\users\edgaradmin\documents\repositories\informatic\hometask4_2\virtualcpu.cpp
+	"VirtualCPU.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+

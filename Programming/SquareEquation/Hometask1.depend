@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1411571364 source:c:\users\edgaradmin\documents\repositories\informatic\hometask1\main.c
+	<stdio.h>
+	<math.h>
+
+1412104238 source:c:\users\edgaradmin\documents\repositories\informatic\hometask1\main.cpp
+	<stdio.h>
+	<math.h>
+	<stdlib.h>
+

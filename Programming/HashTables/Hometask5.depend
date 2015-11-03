@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1415895615 source:c:\users\edgaradmin\documents\repositories\informatic\hometask5\list.c
+
+1415984926 source:c:\users\edgaradmin\documents\repositories\informatic\hometask5\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"List.h"
+	"Hash.h"
+	<locale.h>
+
+1415977000 c:\users\edgaradmin\documents\repositories\informatic\hometask5\list.h
+
+1415977464 source:c:\users\edgaradmin\documents\repositories\informatic\hometask5\list.cpp
+	"List.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+
+1415985346 c:\users\edgaradmin\documents\repositories\informatic\hometask5\hash.h
+	"List.h"
+
+1415984916 source:c:\users\edgaradmin\documents\repositories\informatic\hometask5\hash.cpp
+	"Hash.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+	<string.h>
+	<io.h>
+

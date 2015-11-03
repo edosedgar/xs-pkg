@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1416001035 source:c:\users\edgaradmin\documents\repositories\ilab\task3\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	"Sort.h"
+
+1416001035 c:\users\edgaradmin\documents\repositories\ilab\task3\sort.h
+
+1416001527 source:c:\users\edgaradmin\documents\repositories\ilab\task3\sort.cpp
+	"Sort.h"
+	<stdlib.h>
+	<stdio.h>
+	<io.h>
+	<time.h>
+

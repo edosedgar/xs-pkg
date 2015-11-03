@@ -1,0 +1,31 @@
+\documentclass{article} 
+\usepackage{amsfonts,longtable,amssymb,amsmath} 
+\begin{document} 
+\begin{center} 
+\huge{\textbf{The final work on informatics}} \end{center} 
+\begin{flushright} 
+{\textit{Work performed: Kaziahmedov E.A.}} 
+
+
+{\textit{MIPT student}} 
+\end{flushright} 
+\Large{ 
+{{ 1) Source function: } } 
+$$ f(x) = {\frac{ { (x-2) } ^ { 3 } }{ { (x-6) } ^ { 2 } } }$$
+{{2) After differentiation: }}
+$$ f'(x) = {\frac{ { { {3 } * {  { (x-2) } ^ { (3-1) }  }  } * { (1-0) }  } * {  { (x-6) } ^ { 2 }  } - { { (x-2) } ^ { 3 }  } * {  { {2 } * {  { (x-6) } ^ { (2-1) }  }  } * { (1-0) }  } }{ {  { (x-6) } ^ { 2 }  } ^ { 2 } } }$$
+{{3) First optimization (delete constant): }}
+$$ f'(x) = {\frac{ { { {3 } * {  { (x-2) } ^ { 2 }  }  } * { 1 }  } * {  { (x-6) } ^ { 2 }  } - { { (x-2) } ^ { 3 }  } * {  { {2 } * {  { (x-6) } ^ { 1 }  }  } * { 1 }  } }{ {  { (x-6) } ^ { 2 }  } ^ { 2 } } }$$
+{{4) Second optimization (delete not meaning number): }}
+$$ f'(x) = {\frac{ { {3 } * {  { (x-2) } ^ { 2 }  }  } * {  { (x-6) } ^ { 2 }  } - { { (x-2) } ^ { 3 }  } * {  {2 } * { (x-6) }  } }{ {  { (x-6) } ^ { 2 }  } ^ { 2 } } }$$
+{{5) Finish result (after combined two optimization): }}
+$$ \boxed { f'(x) = {\frac{ { {3 } * {  { (x-2) } ^ { 2 }  }  } * {  { (x-6) } ^ { 2 }  } - { { (x-2) } ^ { 3 }  } * {  {2 } * { (x-6) }  } }{ {  { (x-6) } ^ { 2 }  } ^ { 2 } } }}$$
+\Large{ 
+{ \textbf {References:} } 
+
+{1) \textit {Kernighan B., Ritchie D.} The C Programming Language (second edition) } 
+
+{2) \textit {Knuth D.E.} The Art of Computer Programming} 
+
+{3) \textit {Lvovsky S.M.} Set and layout of the system 
+LATEX}\end{document}

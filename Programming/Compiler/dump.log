@@ -1,0 +1,1884 @@
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 06:09:30 2014
+ 
+OPERATOR: start
+END OF STRING 
+OPERATOR: ReadTo
+VARIABLE: a
+END OF STRING 
+VARIABLE: WriteTo
+VARIABLE: b
+END OF STRING 
+VARIABLE: a
+OPERATOR: assign
+VARIABLE: a
+FUNCTION: +
+VARIABLE: b
+END OF STRING 
+OPERATOR: if
+VARIABLE: a
+FUNCTION: >
+VARIABLE: b
+END OF STRING 
+OPERATOR: start
+END OF STRING 
+OPERATOR: end
+END OF STRING 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 07:49:53 2014
+ 
+OPERATOR: start
+END OF STRING 
+VARIABLE: ReadTo
+VARIABLE: a
+END OF STRING 
+VARIABLE: WriteTo
+VARIABLE: b
+END OF STRING 
+VARIABLE: a
+VARIABLE: assign
+VARIABLE: a
+FUNCTION: +
+VARIABLE: b
+END OF STRING 
+OPERATOR: if
+VARIABLE: a
+FUNCTION: >
+VARIABLE: b
+END OF STRING 
+OPERATOR: start
+END OF STRING 
+OPERATOR: end
+END OF STRING 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 07:49:53 2014
+ 
+-----> Unknown error  
+'start' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:02:56 2014
+ 
+OPERATOR: begin
+END OF STRING 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+END OF STRING 
+OPERATOR: if
+BRACKET: (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET: )
+END OF STRING 
+OPERATOR: begin
+END OF STRING 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+END OF STRING 
+OPERATOR: end
+END OF STRING 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:02:56 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:04:13 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:04:13 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:05:54 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )лллллллл
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:06:16 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )лллллллл
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:07:33 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:07:33 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:07:52 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:07:52 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:08:03 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:08:03 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:08:18 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:08:18 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  {  NULL  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:09:41 2014
+ 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+ENDSTRNG: 
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )лллллллл
+ENDSTRNG: 
+OPERATOR: begin
+ENDSTRNG: 
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+ENDSTRNG: 
+OPERATOR: end
+ENDSTRNG: 
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:12:23 2014
+ 
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:12:23 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'X' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'if' { '>' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:24:16 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:24:16 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'out' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'in' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'X' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'if' { '>' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:25:42 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:25:42 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'out' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'in' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'X' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'if' { '>' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:25:44 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:25:44 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'out' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'in' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'X' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'if' { '>' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:30:54 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:30:54 2014
+ 
+-----> Unknown error  
+'begin'
+ {  NULL  }  {      'out'
+ {           'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {           'in'
+ {                'B'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {                '='
+ {                     'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {                     '+'
+ {                          'B'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {                          'X'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  }  {                     'if'
+ {                          '>'
+ {                               'B'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {                               'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  }  {                          'begin'
+ {  NULL  }  {                               '='
+ {                                    'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {                                    '+'
+ {                                         'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {                                         'A'
+ {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:31:34 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:31:34 2014
+ 
+-----> Unknown error  
+'begin'
+ {  NULL 
+ }  {      'out'
+ {           'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {  NULL 
+ }  {           'in'
+ {                'B'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {  NULL 
+ }  {                '='
+ {                     'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {                     '+'
+ {                          'B'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {  NULL 
+ }  {                          'X'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  }  {                     'if'
+ {                          '>'
+ {                               'B'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {  NULL 
+ }  {                               'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  }  {                          'begin'
+ {  NULL 
+ }  {                               '='
+ {                                    'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {                                    '+'
+ {                                         'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  {  NULL 
+ }  {                                         'A'
+ {  NULL 
+ }  {  NULL 
+ }  {  NULL 
+ }  }  }  {  NULL 
+ }  }  {  NULL 
+ }  }  {  NULL 
+ }  }  }  }  }  {  NULL 
+ } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:32:09 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:32:09 2014
+ 
+-----> Unknown error  
+'begin'
+ {  NULL 
+ } 
+ {      'out'
+ {           'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ {           'in'
+ {                'B'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ {                '='
+ {                     'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {                     '+'
+ {                          'B'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ {                          'X'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ } 
+ {                     'if'
+ {                          '>'
+ {                               'B'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ {                               'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ } 
+ {                          'begin'
+ {  NULL 
+ } 
+ {                               '='
+ {                                    'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {                                    '+'
+ {                                         'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ {                                         'A'
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ {  NULL 
+ } 
+ } 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ } 
+ {  NULL 
+ } 
+ } 
+ } 
+ } 
+ } 
+ {  NULL 
+ } 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:34:45 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+VARIABLE: A
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: X
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: >
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: A
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:34:45 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'out' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'in' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'X' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'if' { '>' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:37:40 2014
+ 
+OPERATOR: begin
+OPERATOR: out
+VARIABLE: A
+OPERATOR: in
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:37:40 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'out' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'in' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:39:40 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:39:40 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:39:55 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 08:39:55 2014
+ 
+-----> Unknown error  
+'begin' {    }  { 'if' { '>' { 'A' {    }  {    }  {    }  }  {    }  { 'B' {    }  {    }  {    }  }  }  { 'begin' {    }  { 'if' { '<' { 'B' {    }  {    }  {    }  }  {    }  { 'A' {    }  {    }  {    }  }  }  { 'begin' {    }  { '=' { 'B' {    }  {    }  {    }  }  { '+' { 'B' {    }  {    }  {    }  }  {    }  { 'A' {    }  {    }  {    }  }  }  {    }  }  {    }  }  {    }  }  {    }  }  {    }  }  {    } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:24:41 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:24:41 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:25:29 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:25:29 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:18 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:18 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:27 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:27 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:37 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:26:37 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:29:49 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:29:49 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:32 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:32 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:34 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:34 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:35 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:35 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:40 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:40 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:53 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:31:53 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:35:48 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:35:48 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:36:02 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:36:02 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:53:11 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:53:11 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:54:36 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )лллллллл
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (лллллллл
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )лллллллл
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:54:36 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:54:55 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:54:55 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:55:20 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:55:20 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:55:25 2014
+ 
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: A
+FUNCTION: >
+VARIABLE: B
+BRACKET : )
+OPERATOR: begin
+OPERATOR: if
+BRACKET : (
+VARIABLE: B
+FUNCTION: <
+VARIABLE: A
+BRACKET : )
+OPERATOR: begin
+VARIABLE: B
+OPERATOR: =
+VARIABLE: B
+FUNCTION: +
+VARIABLE: A
+OPERATOR: end
+OPERATOR: end
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 14:55:25 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'if' { '>' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { 'if' { '<' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  { 'begin' {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:10:55 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:10:55 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:11:56 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:11:56 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:15:48 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:15:48 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:17:57 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:17:57 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:18:13 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:18:13 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:19:01 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:19:01 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  {  NULL  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:55:26 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+VARIABLE: B
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 15:55:26 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  }  }  {  NULL  } 
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 16:02:49 2014
+ 
+OPERATOR: begin
+OPERATOR: in
+VARIABLE: A
+OPERATOR: out
+VARIABLE: B
+VARIABLE: B
+OPERATOR: =
+VARIABLE: A
+FUNCTION: +
+VARIABLE: B
+OPERATOR: end
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Mon Dec 22 16:02:49 2014
+ 
+-----> Unknown error  
+'begin' {  NULL  }  { 'in' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'out' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { '=' { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  { '+' { 'A' {  NULL  }  {  NULL  }  {  NULL  }  }  {  NULL  }  { 'B' {  NULL  }  {  NULL  }  {  NULL  }  }  }  {  NULL  }  }  }  }  {  NULL  } 
+/****************************************************************************/

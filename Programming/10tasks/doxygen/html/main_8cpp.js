@@ -1,0 +1,27 @@
+var main_8cpp =
+[
+    [ "TStudent", "struct_t_student.html", "struct_t_student" ],
+    [ "ASSERT", "main_8cpp.html#a0966b817b229d48e5ffc7feab19a0be6", null ],
+    [ "DEBUG", "main_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83", null ],
+    [ "AddToBinaryDigits", "main_8cpp.html#a72a65edde2776576f801ff5606c2f9a1", null ],
+    [ "AlphabeticSort", "main_8cpp.html#ad8744bb3de714fac63bc811a525b3007", null ],
+    [ "DeleteDublicates", "main_8cpp.html#a888b66a79c61e6c8bb04ddf9ee59db18", null ],
+    [ "DeletingSpaces", "main_8cpp.html#a12671e01c088338f8328cd916a74d5e3", null ],
+    [ "DeterminantGreatestDigit", "main_8cpp.html#a2ef035ed4608ea5fbb0fcbab89a71a19", null ],
+    [ "FindBiggestWhiteSquare", "main_8cpp.html#aa57f46add924f828109462ccd1689a79", null ],
+    [ "FourDigitsNumbers", "main_8cpp.html#ae2555f5e9286498fa490f523bad25db5", null ],
+    [ "IncNumber", "main_8cpp.html#aa374e9912509ba9f8aa0bb0eab461817", null ],
+    [ "main", "main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
+    [ "Min", "main_8cpp.html#aa306a68e6ed0a72761d565c9d3cdba6c", null ],
+    [ "NumbersFreeOfSquares", "main_8cpp.html#ad4bd17fd72b5484558ae3932b2790dc0", null ],
+    [ "RatingSort", "main_8cpp.html#a34e213bd85f210aba778b4b0669f529b", null ],
+    [ "ReverseWords", "main_8cpp.html#abb5c477502292e5b8b94136d1295a283", null ],
+    [ "SortStudents", "main_8cpp.html#a10b8a9be16803a0d383683393e1ab463", null ],
+    [ "SumBinary", "main_8cpp.html#a7d0d6fed66ede909d4b0f68824c04805", null ],
+    [ "SumDigitsOnDiagonalSquareMatrix", "main_8cpp.html#aef6c657a3b89f4855d758c9d44318a63", null ],
+    [ "Weighing", "main_8cpp.html#aa4ea76b0b134256a6d8691943dbe0a02", null ],
+    [ "WeighRecursion", "main_8cpp.html#abff85f20cd7d027f1ac86b2e30d9b174", null ],
+    [ "MaxBits", "main_8cpp.html#a742f8ff746fcaa2c6eb8fd8d53afb759", null ],
+    [ "MaxWordLength", "main_8cpp.html#a21619228866ddd03df120f5df347af2e", null ],
+    [ "ZeroCodeASCII", "main_8cpp.html#a4162c74ea1c435726480346127b94cb9", null ]
+];

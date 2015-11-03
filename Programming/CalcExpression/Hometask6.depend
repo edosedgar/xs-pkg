@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1418516014 source:c:\users\edgaradmin\documents\repositories\informatic\hometask6\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<windows.h>
+	"Tree.h"
+	"Calculator.h"
+
+1418493637 c:\users\edgaradmin\documents\repositories\informatic\hometask6\tree.h
+	"Calculator.h"
+
+1418493772 source:c:\users\edgaradmin\documents\repositories\informatic\hometask6\tree.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<locale.h>
+	"Tree.h"
+	<time.h>
+
+1418522710 source:c:\users\edgaradmin\documents\repositories\informatic\hometask6\calculator.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"Calculator.h"
+	<time.h>
+	"MyStack.h"
+	"Math.h"
+
+1418523231 c:\users\edgaradmin\documents\repositories\informatic\hometask6\calculator.h
+
+1414751568 c:\users\edgaradmin\documents\repositories\informatic\hometask6\mystack.h
+
+1418502838 source:c:\users\edgaradmin\documents\repositories\informatic\hometask6\mystack.cpp
+	"MyStack.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+

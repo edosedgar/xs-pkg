@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1414536680 source:c:\users\edgaradmin\documents\repositories\informatic\hometask3\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<locale.h>
+

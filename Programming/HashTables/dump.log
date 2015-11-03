@@ -1,0 +1,1249 @@
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 01:43:12 2014
+ 
+-----> Unknown error  
+The list at address:            0x00362268 
+The address on first element:   0x00362280 
+The address on last element:    0x00362280 
+The address on current element: 0x00362280 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00362280 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 01:44:20 2014
+ 
+-----> Unknown error  
+The list at address:            0x006A2268 
+The address on first element:   0x006A2280 
+The address on last element:    0x006A2280 
+The address on current element: 0x006A2280 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A2280 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 01:48:03 2014
+ 
+-----> Unknown error  
+The list at address:            0x00022280 
+The address on first element:   0x00022298 
+The address on last element:    0x00022298 
+The address on current element: 0x00022298 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00022298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 01:56:18 2014
+ 
+-----> Unknown error  
+The list at address:            0x00892280 
+The address on first element:   0x00892298 
+The address on last element:    0x008922B0 
+The address on current element: 0x008922B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00892298 
+Data: No data 
+Next address: 0x008922B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x008922B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00892298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 01:58:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702380 
+The address on first element:   0x007023A8 
+The address on last element:    0x007023D0 
+The address on current element: 0x007023D0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007023A8 
+Data: No data 
+Next address: 0x007023D0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007023D0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x007023A8 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:01:08 2014
+ 
+-----> Unknown error  
+The list at address:            0x00672280 
+The address on first element:   0x00672298 
+The address on last element:    0x006722B0 
+The address on current element: 0x006722B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00672298 
+Data: No data 
+Next address: 0x006722B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006722B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00672298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:01:19 2014
+ 
+-----> Unknown error  
+The list at address:            0x00382280 
+The address on first element:   0x00382298 
+The address on last element:    0x003822B0 
+The address on current element: 0x003822B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00382298 
+Data: No data 
+Next address: 0x003822B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003822B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00382298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:02:15 2014
+ 
+-----> Unknown error  
+The list at address:            0x00562280 
+The address on first element:   0x00562298 
+The address on last element:    0x005622B0 
+The address on current element: 0x005622B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00562298 
+Data: No data 
+Next address: 0x005622B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005622B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00562298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:05:33 2014
+ 
+-----> Unknown error  
+The list at address:            0x003F2280 
+The address on first element:   0x003F2298 
+The address on last element:    0x003F22B0 
+The address on current element: 0x003F22B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003F2298 
+Data: No data 
+Next address: 0x003F22B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003F22B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x003F2298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:07:51 2014
+ 
+-----> Unknown error  
+The list at address:            0x00382280 
+The address on first element:   0x00382298 
+The address on last element:    0x003822B0 
+The address on current element: 0x003822B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00382298 
+Data: No data 
+Next address: 0x003822B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003822B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00382298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:09:05 2014
+ 
+-----> Unknown error  
+The list at address:            0x00512380 
+The address on first element:   0x005123A8 
+The address on last element:    0x005123D0 
+The address on current element: 0x005123D0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005123A8 
+Data: No data 
+Next address: 0x005123D0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005123D0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x005123A8 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:13:42 2014
+ 
+-----> Unknown error  
+The list at address:            0x00392280 
+The address on first element:   0x00392298 
+The address on last element:    0x003922B0 
+The address on current element: 0x003922B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00392298 
+Data: No data 
+Next address: 0x003922B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003922B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00392298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:13:42 2014
+ 
+-----> Unknown error  
+The list at address:            0x00392280 
+The address on first element:   0x00392298 
+The address on last element:    0x003922B0 
+The address on current element: 0x003922B0 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00392298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:15:06 2014
+ 
+-----> Unknown error  
+The list at address:            0x00802280 
+The address on first element:   0x00802298 
+The address on last element:    0x008022B0 
+The address on current element: 0x008022B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00802298 
+Data: No data 
+Next address: 0x008022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x008022B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00802298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:15:06 2014
+ 
+-----> Unknown error  
+The list at address:            0x00802280 
+The address on first element:   0x00802298 
+The address on last element:    0x008022B0 
+The address on current element: 0x008022B0 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00802298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:15:35 2014
+ 
+-----> Unknown error  
+The list at address:            0x00532380 
+The address on first element:   0x005323A8 
+The address on last element:    0x005323D0 
+The address on current element: 0x005323D0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005323A8 
+Data: No data 
+Next address: 0x005323D0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005323D0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x005323A8 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:16:17 2014
+ 
+-----> Unknown error  
+The list at address:            0x00532380 
+The address on first element:   0x005323A8 
+The address on last element:    0x005323D0 
+The address on current element: 0x005323D0 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005323A8 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:18:03 2014
+ 
+-----> Unknown error  
+The list at address:            0x00742280 
+The address on first element:   0x00742298 
+The address on last element:    0x007422B0 
+The address on current element: 0x007422B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00742298 
+Data: No data 
+Next address: 0x007422B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007422B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00742298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:18:03 2014
+ 
+-----> Unknown error  
+The list at address:            0x00742280 
+The address on first element:   0x00742298 
+The address on last element:    0x007422B0 
+The address on current element: 0x00000000 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00742298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:20:21 2014
+ 
+-----> Unknown error  
+The list at address:            0x003F2280 
+The address on first element:   0x003F2298 
+The address on last element:    0x003F22B0 
+The address on current element: 0x003F22B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003F2298 
+Data: No data 
+Next address: 0x003F22B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003F22B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x003F2298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:21:36 2014
+ 
+-----> Unknown error  
+The list at address:            0x00532280 
+The address on first element:   0x00532298 
+The address on last element:    0x005322B0 
+The address on current element: 0x005322B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00532298 
+Data: No data 
+Next address: 0x005322B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005322B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00532298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:22:51 2014
+ 
+-----> Unknown error  
+The list at address:            0x00502280 
+The address on first element:   0x00502298 
+The address on last element:    0x005022B0 
+The address on current element: 0x005022B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00502298 
+Data: No data 
+Next address: 0x005022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x005022B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00502298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:23:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x003D2280 
+The address on first element:   0x003D2298 
+The address on last element:    0x003D22B0 
+The address on current element: 0x003D22B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003D2298 
+Data: No data 
+Next address: 0x003D22B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003D22B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x003D2298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:23:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x003D2280 
+The address on first element:   0x003D2298 
+The address on last element:    0x003D22B0 
+The address on current element: 0x003D2298 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003D2298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:25:53 2014
+ 
+-----> Unknown error  
+The list at address:            0x003E2380 
+The address on first element:   0x003E23A8 
+The address on last element:    0x003E23D0 
+The address on current element: 0x003E23D0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003E23A8 
+Data: No data 
+Next address: 0x003E23D0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003E23D0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x003E23A8 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:26:11 2014
+ 
+-----> Unknown error  
+The list at address:            0x003E2380 
+The address on first element:   0x003E23A8 
+The address on last element:    0x003E23D0 
+The address on current element: 0x003E23A8 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003E23A8 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:28:20 2014
+ 
+-----> Unknown error  
+The list at address:            0x00742280 
+The address on first element:   0x00742298 
+The address on last element:    0x007422B0 
+The address on current element: 0x007422B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00742298 
+Data: No data 
+Next address: 0x007422B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007422B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00742298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:28:20 2014
+ 
+-----> Unknown error  
+The list at address:            0x00742280 
+The address on first element:   0x00742298 
+The address on last element:    0x00742298 
+The address on current element: 0x00742298 
+The number element of list: 1 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00742298 
+Data: No data 
+Next address: 0x00000000 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:29:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x00492280 
+The address on first element:   0x00492298 
+The address on last element:    0x004922B0 
+The address on current element: 0x004922B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00492298 
+Data: No data 
+Next address: 0x004922B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004922B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00492298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:29:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x00492280 
+The address on first element:   0x00492298 
+The address on last element:    0x004922E8 
+The address on current element: 0x004922E8 
+The number element of list: 3 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00492298 
+Data: No data 
+Next address: 0x004922B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004922B0 
+Data: Derro 
+Next address: 0x004922E8 
+Prev address: 0x00492298 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004922E8 
+Data: Derro 
+Next address: 0x00000000 
+Prev address: 0x004922B0 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:29:57 2014
+ 
+-----> Unknown error  
+The list at address:            0x00492280 
+The address on first element:   0x00492298 
+The address on last element:    0x004922B0 
+The address on current element: 0x004922B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00492298 
+Data: No data 
+Next address: 0x004922B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004922B0 
+Data: Derro 
+Next address: 0x00000000 
+Prev address: 0x00492298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:52:16 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702280 
+The address on first element:   0x00702298 
+The address on last element:    0x007022B0 
+The address on current element: 0x007022B0 
+The number element of list: 2 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702298 
+Data: No data 
+Next address: 0x007022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022B0 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00702298 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:52:16 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702280 
+The address on first element:   0x00702298 
+The address on last element:    0x007022E8 
+The address on current element: 0x007022E8 
+The number element of list: 3 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702298 
+Data: No data 
+Next address: 0x007022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022B0 
+Data: Hello 
+Next address: 0x007022E8 
+Prev address: 0x00702298 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022E8 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x007022B0 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:52:16 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702280 
+The address on first element:   0x00702298 
+The address on last element:    0x00702300 
+The address on current element: 0x00702300 
+The number element of list: 4 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702298 
+Data: No data 
+Next address: 0x007022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022B0 
+Data: Hello 
+Next address: 0x007022E8 
+Prev address: 0x00702298 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022E8 
+Data: Hello 
+Next address: 0x00702300 
+Prev address: 0x007022B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702300 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x007022E8 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:52:16 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702280 
+The address on first element:   0x00702298 
+The address on last element:    0x00702318 
+The address on current element: 0x00702318 
+The number element of list: 5 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702298 
+Data: No data 
+Next address: 0x007022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022B0 
+Data: Hello 
+Next address: 0x007022E8 
+Prev address: 0x00702298 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022E8 
+Data: Hello 
+Next address: 0x00702300 
+Prev address: 0x007022B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702300 
+Data: Hello 
+Next address: 0x00702318 
+Prev address: 0x007022E8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702318 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00702300 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:52:16 2014
+ 
+-----> Unknown error  
+The list at address:            0x00702280 
+The address on first element:   0x00702298 
+The address on last element:    0x00702330 
+The address on current element: 0x00702330 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702298 
+Data: No data 
+Next address: 0x007022B0 
+Prev address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022B0 
+Data: Hello 
+Next address: 0x007022E8 
+Prev address: 0x00702298 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x007022E8 
+Data: Hello 
+Next address: 0x00702300 
+Prev address: 0x007022B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702300 
+Data: Hello 
+Next address: 0x00702318 
+Prev address: 0x007022E8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702318 
+Data: Hello 
+Next address: 0x00702330 
+Prev address: 0x00702300 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00702330 
+Data: Hello 
+Next address: 0x00000000 
+Prev address: 0x00702318 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:53:59 2014
+ 
+-----> Unknown error  
+The list at address:            0x006A2280 
+The address on first element:   0x006A2298 
+The address on last element:    0x006A2310 
+The address on current element: 0x006A2310 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A2298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x006A22B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A22B0 
+Data: Hello 
+Prev address: 0x006A2298 
+Next address: 0x006A22C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A22C8 
+Data: Hello 
+Prev address: 0x006A22B0 
+Next address: 0x006A22E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A22E0 
+Data: Hello 
+Prev address: 0x006A22C8 
+Next address: 0x006A22F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A22F8 
+Data: Hello 
+Prev address: 0x006A22E0 
+Next address: 0x006A2310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x006A2310 
+Data: Hello 
+Prev address: 0x006A22F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:56:40 2014
+ 
+-----> Unknown error  
+The list at address:            0x004C2280 
+The address on first element:   0x004C2298 
+The address on last element:    0x004C2310 
+The address on current element: 0x004C2310 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C2298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x004C22B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22B0 
+Data: Hello 
+Prev address: 0x004C2298 
+Next address: 0x004C22C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22C8 
+Data: Hello 
+Prev address: 0x004C22B0 
+Next address: 0x004C22E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22E0 
+Data: Hello 
+Prev address: 0x004C22C8 
+Next address: 0x004C22F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22F8 
+Data: Hello 
+Prev address: 0x004C22E0 
+Next address: 0x004C2310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C2310 
+Data: Hello 
+Prev address: 0x004C22F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:56:40 2014
+ 
+-----> Unknown error  
+The list at address:            0x004C2280 
+The address on first element:   0x004C2298 
+The address on last element:    0x004C2310 
+The address on current element: 0x004C22E0 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C2298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x004C22B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22B0 
+Data: Hello 
+Prev address: 0x004C2298 
+Next address: 0x004C22C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22C8 
+Data: Hello 
+Prev address: 0x004C22B0 
+Next address: 0x004C22E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22E0 
+Data: Hello 
+Prev address: 0x004C22C8 
+Next address: 0x004C22F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C22F8 
+Data: Hello 
+Prev address: 0x004C22E0 
+Next address: 0x004C2310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x004C2310 
+Data: Hello 
+Prev address: 0x004C22F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:57:21 2014
+ 
+-----> Unknown error  
+The list at address:            0x003B2280 
+The address on first element:   0x003B2298 
+The address on last element:    0x003B2310 
+The address on current element: 0x003B2310 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B2298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x003B22B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22B0 
+Data: Hello 
+Prev address: 0x003B2298 
+Next address: 0x003B22C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22C8 
+Data: Hello 
+Prev address: 0x003B22B0 
+Next address: 0x003B22E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22E0 
+Data: Hello 
+Prev address: 0x003B22C8 
+Next address: 0x003B22F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22F8 
+Data: Hello 
+Prev address: 0x003B22E0 
+Next address: 0x003B2310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B2310 
+Data: Hello 
+Prev address: 0x003B22F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:57:21 2014
+ 
+-----> Unknown error  
+The list at address:            0x003B2280 
+The address on first element:   0x003B2298 
+The address on last element:    0x003B2310 
+The address on current element: 0x003B2310 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B2298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x003B22B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22B0 
+Data: Hello 
+Prev address: 0x003B2298 
+Next address: 0x003B22C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22C8 
+Data: Hello 
+Prev address: 0x003B22B0 
+Next address: 0x003B22E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22E0 
+Data: Hello 
+Prev address: 0x003B22C8 
+Next address: 0x003B22F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B22F8 
+Data: Hello 
+Prev address: 0x003B22E0 
+Next address: 0x003B2310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x003B2310 
+Data: Hello 
+Prev address: 0x003B22F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:58:10 2014
+ 
+-----> Unknown error  
+The list at address:            0x00A22280 
+The address on first element:   0x00A22298 
+The address on last element:    0x00A22310 
+The address on current element: 0x00A22310 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A22298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x00A222B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222B0 
+Data: Hello 
+Prev address: 0x00A22298 
+Next address: 0x00A222C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222C8 
+Data: Hello 
+Prev address: 0x00A222B0 
+Next address: 0x00A222E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222E0 
+Data: Hello 
+Prev address: 0x00A222C8 
+Next address: 0x00A222F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222F8 
+Data: Hello 
+Prev address: 0x00A222E0 
+Next address: 0x00A22310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A22310 
+Data: Hello 
+Prev address: 0x00A222F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/
+
+/****************************************************************************/
+
+$$$$$ Date: Fri Nov 14 02:58:10 2014
+ 
+-----> Unknown error  
+The list at address:            0x00A22280 
+The address on first element:   0x00A22298 
+The address on last element:    0x00A22310 
+The address on current element: 0x00A22298 
+The number element of list: 6 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A22298 
+Data: No data 
+Prev address: 0x00000000 
+Next address: 0x00A222B0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222B0 
+Data: Hello 
+Prev address: 0x00A22298 
+Next address: 0x00A222C8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222C8 
+Data: Hello 
+Prev address: 0x00A222B0 
+Next address: 0x00A222E0 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222E0 
+Data: Hello 
+Prev address: 0x00A222C8 
+Next address: 0x00A222F8 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A222F8 
+Data: Hello 
+Prev address: 0x00A222E0 
+Next address: 0x00A22310 
+|+++++++++++++++++++++++++++++++++++++| 
+|+++++++++++++++++++++++++++++++++++++| 
+Address on element: 0x00A22310 
+Data: Hello 
+Prev address: 0x00A222F8 
+Next address: 0x00000000 
+|+++++++++++++++++++++++++++++++++++++| 
+
+/****************************************************************************/

@@ -1,0 +1,117 @@
+# depslib dependency file v1.0
+1419133965 source:c:\users\edgaradmin\documents\repositories\informatic\hometask7\differincial.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"Differincial.h"
+	<time.h>
+	"MyStack.h"
+	"Math.h"
+
+1414751568 c:\users\edgaradmin\documents\repositories\informatic\hometask7\mystack.h
+
+1419134507 source:c:\users\edgaradmin\documents\repositories\informatic\hometask7\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<windows.h>
+	"Tree.h"
+	"Differincial.h"
+	"TeX.h"
+
+1419010823 c:\users\edgaradmin\documents\repositories\informatic\hometask7\tree.h
+
+1419026809 c:\users\edgaradmin\documents\repositories\informatic\hometask7\differincial.h
+	"Tree.h"
+
+1418502838 source:c:\users\edgaradmin\documents\repositories\informatic\hometask7\mystack.cpp
+	"MyStack.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+
+1419012904 source:c:\users\edgaradmin\documents\repositories\informatic\hometask7\tree.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<locale.h>
+	"Tree.h"
+	<time.h>
+
+1419032409 c:\users\edgaradmin\documents\repositories\informatic\hometask7\tex.h
+	"Tree.h"
+	"Differincial.h"
+
+1419134125 source:c:\users\edgaradmin\documents\repositories\informatic\hometask7\tex.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"TeX.h"
+
+1419134525 source:c:\users\edgaradmin\documents\github\square-equation\hometask7\differincial.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"Differincial.h"
+	<time.h>
+	"MyStack.h"
+	"Math.h"
+
+1419026809 c:\users\edgaradmin\documents\github\square-equation\hometask7\differincial.h
+	"Tree.h"
+
+1419010823 c:\users\edgaradmin\documents\github\square-equation\hometask7\tree.h
+
+1414751568 c:\users\edgaradmin\documents\github\square-equation\hometask7\mystack.h
+
+1418502838 source:c:\users\edgaradmin\documents\github\square-equation\hometask7\mystack.cpp
+	"MyStack.h"
+	<stdlib.h>
+	<errno.h>
+	<stdio.h>
+	<time.h>
+
+1419135244 source:c:\users\edgaradmin\documents\github\square-equation\hometask7\tex.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"TeX.h"
+
+1419032409 c:\users\edgaradmin\documents\github\square-equation\hometask7\tex.h
+	"Tree.h"
+	"Differincial.h"
+
+1419012904 source:c:\users\edgaradmin\documents\github\square-equation\hometask7\tree.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<locale.h>
+	"Tree.h"
+	<time.h>
+
+1419134507 source:c:\users\edgaradmin\documents\github\square-equation\hometask7\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<windows.h>
+	"Tree.h"
+	"Differincial.h"
+	"TeX.h"
+

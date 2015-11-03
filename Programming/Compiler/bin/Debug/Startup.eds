@@ -1,0 +1,14 @@
+begin
+	in A
+	out B
+	if ( A > B )
+	begin
+		if ( A > B )
+		begin
+			while ( a > b )
+			begin
+				B = B + 1
+			end
+		end
+	end
+end

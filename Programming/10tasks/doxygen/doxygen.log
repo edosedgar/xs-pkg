@@ -1,0 +1,17 @@
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:149: warning: member ReverseWords belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:200: warning: member SumDigitsOnDiagonalSquareMatrix belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:279: warning: member AddToBinaryDigits belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:332: warning: member DeterminantGreatestDigit belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:352: warning: member SumBinary belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:402: warning: member FindBiggestWhiteSquare belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:511: warning: member Min belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:536: warning: member SortStudents belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:597: warning: member AlphabeticSort belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:621: warning: member RatingSort belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:656: warning: member DeleteDublicates belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:706: warning: member NumbersFreeOfSquares belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:758: warning: member Weighing belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:773: warning: member WeighRecursion belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:815: warning: member FourDigitsNumbers belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:839: warning: member IncNumber belongs to two different groups. The second one found here will be ignored.
+C:/Users/EdgarAdmin/Documents/Repositories/Informatic/Hometask2/main.cpp:96: warning: argument 'Text' of command @param is not found in the argument list of DeletingSpaces()

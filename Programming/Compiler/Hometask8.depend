@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1419250674 source:c:\users\edgaradmin\documents\repositories\informatic\hometask8\compiler.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<time.h>
+	"Compiler.h"
+
+1419252603 c:\users\edgaradmin\documents\repositories\informatic\hometask8\compiler.h
+	"Tree.h"
+
+1419211238 source:c:\users\edgaradmin\documents\repositories\informatic\hometask8\differincial.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	"Differincial.h"
+	<time.h>
+	"Math.h"
+
+1419026809 c:\users\edgaradmin\documents\repositories\informatic\hometask8\differincial.h
+	"Tree.h"
+
+1419226452 c:\users\edgaradmin\documents\repositories\informatic\hometask8\tree.h
+
+1419226887 source:c:\users\edgaradmin\documents\repositories\informatic\hometask8\tree.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<locale.h>
+	"Tree.h"
+	<time.h>
+
+1419247785 source:c:\users\edgaradmin\documents\repositories\informatic\hometask8\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<io.h>
+	<errno.h>
+	<windows.h>
+	"Tree.h"
+	"Compiler.h"
+

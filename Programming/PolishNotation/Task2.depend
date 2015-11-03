@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1411148201 source:c:\ilabrepository\ilab\task2\main.c
+	<stdio.h>
+
+1412790300 source:c:\users\edgaradmin\documents\repositories\ilab\task2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"MyStack.h"
+	"ArithmeticOperation.h"
+
+1414522693 c:\users\edgaradmin\documents\repositories\ilab\task2\mystack.h
+
+1413630430 c:\users\edgaradmin\documents\repositories\ilab\task2\arithmeticoperation.h
+
+1412789065 source:c:\users\edgaradmin\documents\repositories\ilab\task2\arithmeticoperation.c
+	"ArithmeticOperation.h"
+
+1412789580 source:c:\users\edgaradmin\documents\repositories\ilab\task2\mystack.c
+	"MyStack.h"
+	<stdlib.h>
+
+1414532268 source:c:\users\edgaradmin\documents\repositories\ilab\task2\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"MyStack.h"
+	"ArithmeticOperation.h"
+	"errno.h"
+
+1413630378 source:c:\users\edgaradmin\documents\repositories\ilab\task2\arithmeticoperation.cpp
+	"stdio.h"
+	"ArithmeticOperation.h"
+	<errno.h>
+
+1414532423 source:c:\users\edgaradmin\documents\repositories\ilab\task2\mystack.cpp
+	"MyStack.h"
+	<stdlib.h>
+	<errno.h>
+	"ArithmeticOperation.h"
+	<stdio.h>
+	<time.h>
+
