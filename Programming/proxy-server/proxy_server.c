@@ -211,7 +211,7 @@ int start_server(int number, int descriptor) {
             /*
              * Close unusual pipes
              */
-            fprintf(stderr, "Start child creation.\n");
+            //fprintf(stderr, "Start child creation.\n");
             close(temp_fd1[P_WRITE]);
             close(temp_fd2[P_READ]);
             /*
@@ -227,12 +227,12 @@ int start_server(int number, int descriptor) {
             /*
              * Go out from "for" and start retranslate data
              */
-            int j = 0;
-            for (j = 0; j < i; j++) {
-                close(proxy_data[j].fd_read);
-                if ( j != 0 ) close(proxy_data[j - 1].fd_write);
+            int lost = 0;
+            for (lost = 0; lost < i; lost++) {
+                close(proxy_data[lost].fd_read);
+                if ( lost != 0 ) close(proxy_data[lost - 1].fd_write);
             }
-            fprintf(stderr, "End child creation.\n");
+            //fprintf(stderr, "End child creation.\n");
             break;
         }
     }
@@ -345,7 +345,7 @@ int start_server(int number, int descriptor) {
             write(child_out, packet, cur_size);
         }
     }
-    sleep(5);
+    sleep(1);
     return 0;   
 }
 
