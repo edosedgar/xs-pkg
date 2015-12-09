@@ -184,18 +184,25 @@ int start_server(int number, int descriptor) {
                 if (temp_fd1[P_WRITE] > pipe_max_d)
                     pipe_max_d = temp_fd1[P_WRITE];
             }
-            fprintf(stderr,"hi: %d\n", pipe_max_d);
             /*
              * Fill pipe fields
              * last buffer write to stdout
              */
-            if (i != (number - 1)) {
-                proxy_data[i].fd_write = temp_fd1[P_WRITE];
-                proxy_data[i + 1].fd_read = temp_fd2[P_READ];
-                fcntl(proxy_data[i].fd_write, F_SETFL, O_NONBLOCK);
+            if (i != 0) {
+                proxy_data[i].fd_read = temp_fd2[P_READ];
+                proxy_data[i - 1].fd_write = temp_fd1[P_WRITE];
+                fcntl(proxy_data[i - 1].fd_write, F_SETFL, O_NONBLOCK);
                 fcntl(proxy_data[i].fd_read, F_SETFL, O_NONBLOCK);
-            } else 
-                proxy_data[i].fd_write = STDOUT_FILENO;  
+            }
+            if (i == 0) {
+                proxy_data[i].fd_read = temp_fd2[P_READ];
+                close(temp_fd1[P_WRITE]);
+                fcntl(proxy_data[i].fd_read, F_SETFL, O_NONBLOCK);
+            }
+            if (i == (number - 1)) {
+                proxy_data[i].fd_write = STDOUT_FILENO;
+
+            }
         }
         /*
          * Child mode
@@ -204,6 +211,7 @@ int start_server(int number, int descriptor) {
             /*
              * Close unusual pipes
              */
+            fprintf(stderr, "Start child creation.\n");
             close(temp_fd1[P_WRITE]);
             close(temp_fd2[P_READ]);
             /*
@@ -220,10 +228,11 @@ int start_server(int number, int descriptor) {
              * Go out from "for" and start retranslate data
              */
             int j = 0;
-            for (j = 0; j < i; i++) {
-                close(proxy_data[i].fd_write);
-                close(proxy_data[i+1].fd_read);
+            for (j = 0; j < i; j++) {
+                close(proxy_data[j].fd_read);
+                if ( j != 0 ) close(proxy_data[j - 1].fd_write);
             }
+            fprintf(stderr, "End child creation.\n");
             break;
         }
     }
@@ -236,11 +245,23 @@ int start_server(int number, int descriptor) {
      * Parent mode
      */
     if (mode != 0) {
+        /*int i = 0;
+        for (i = 0; i < number; i++) {
+            int cur_size = 0;
+            cur_size = read(proxy_data[i].fd_read, proxy_data[i].data, PAGE_SIZE);
+            write(proxy_data[i].fd_write, proxy_data[i].data, cur_size);
+        }*/
         while (success_checks) {
 
             FD_ZERO(&read_set);
             FD_ZERO(&write_set);
 
+            int i = 0;
+            fprintf(stderr, "State: ");
+            for (i = 0; i < number; i++ ){
+                fprintf(stderr, "%d ", (int)(proxy_data[i].p_out - proxy_data[i].p_in));
+            }
+            fprintf(stderr, "\n");
             success_checks = 0;
             /*
              * Check pipes on exist and collect number of living pipes
@@ -252,7 +273,7 @@ int start_server(int number, int descriptor) {
                     success_checks++;
                 }
                 if (proxy_data[i].fd_write != 0 && \
-                    (int)(proxy_data[i].p_out - proxy_data[i].p_out) != 0) {
+                    (int)(proxy_data[i].p_out - proxy_data[i].p_in) != 0) {
                     FD_SET(proxy_data[i].fd_write, &write_set);
                     success_checks++;
                 }
@@ -272,6 +293,7 @@ int start_server(int number, int descriptor) {
                 if (FD_ISSET(proxy_data[i].fd_read, &read_set) != 0) {
                     int cur_length = read(proxy_data[i].fd_read, proxy_data[i].p_out, \
                                           proxy_data[i].size - (int)(proxy_data[i].p_out - proxy_data[i].p_in));
+                    //fprintf(stderr, "Current size-state(read): %d \n", cur_length);
                     if (cur_length > 0)
                         proxy_data[i].p_out += cur_length;
                     else {
@@ -287,6 +309,7 @@ int start_server(int number, int descriptor) {
                 if (FD_ISSET(proxy_data[i].fd_write, &write_set) != 0) {
                     int cur_length = write(proxy_data[i].fd_write, proxy_data[i].data, \
                                            proxy_data[i].p_out - proxy_data[i].p_in);
+                    //fprintf(stderr, "Current size-state(write): %d \n", cur_length);
                     if (cur_length > 0) {
                         SHL_m(proxy_data[i].data, cur_length, proxy_data[i].p_out);
                         proxy_data[i].p_out -= cur_length;
@@ -315,14 +338,14 @@ int start_server(int number, int descriptor) {
      * Child mode
      */
     else {
-        char packet[data_size * 3 * PAGE_SIZE];
+        char packet[PAGE_SIZE];
         int cur_size = 1;
         while (cur_size > 0) {
-            cur_size = read(child_in, packet, data_size * 3 * PAGE_SIZE);
+            cur_size = read(child_in, packet, PAGE_SIZE);
             write(child_out, packet, cur_size);
-            fprintf(stderr, "fdfedf");
         }
     }
+    sleep(5);
     return 0;   
 }
 
