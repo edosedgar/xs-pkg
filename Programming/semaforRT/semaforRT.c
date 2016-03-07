@@ -112,7 +112,7 @@ int main(int argc, char* argv[]) {
     if (work_mode == TX) {
         if (transmitter_module(file_name, semaphores, buf) == -1 ) 
             exit(EXIT_FAILURE);
-        semctl(semaphores, 5, IPC_RMID, NULL);
+        semctl(semaphores, SEM_NUM, IPC_RMID, NULL);
     }
     
     exit(EXIT_SUCCESS);
@@ -212,32 +212,51 @@ int receiver_module(int semaphores, data_packet_t* memory) {
         fprintf(stderr, "Copy of program already started.\n");
         return -1;
     }
-    /*
-     * Start critical area
-     */
     uint16_t cur_size = DATA_SIZE;
 
-    while (cur_size != 0) { 
-        ADD_OPER(0, MEM_M, P, 0);
-        ADD_OPER(1, MEM_M, V, 0);
-        if (DO_OPER(2) == -1) {
+    ADD_OPER(0, SND_M, P, 0);
+    ADD_OPER(1, SND_M, V, 0);
+    if (DO_OPER(2) == -1) {
+        perror("");
+        return -1;
+    }
+
+    while (cur_size != 0) {
+        /*
+         * Check death transmitter
+         * Set MEM_M
+         */
+        ADD_OPER(0, SND_M, P, IPC_NOWAIT);
+        ADD_OPER(1, SND_M, V, 0);
+        ADD_OPER(2, MEM_M, P, 0);
+        ADD_OPER(3, MEM_M, V, 0);
+
+        if (DO_OPER(4) == -1) {
             perror("");
             return -1;
         }
-
+        /*
+         * Critical area start
+         */
         cur_size = memory->size;
         write(STDOUT_FILENO, memory->data, cur_size);
-        //fprintf(stderr, "Block %dB read.\n", cur_size);
-
-        ADD_OPER(0, MEM_M, P, 0);
-        if (DO_OPER(1) == -1) {
+        usleep(100000);
+        fprintf(stderr,"hi"); 
+        /*
+         * Critical area end
+         */
+        /*
+         * Check death transmitter
+         * Reset MEM_M
+         */
+        ADD_OPER(0, SND_M, P, IPC_NOWAIT);
+        ADD_OPER(1, SND_M, V, 0);
+        ADD_OPER(2, MEM_M, P, 0);
+        if (DO_OPER(3) == -1) {
             perror("");
             return -1;
         }
     }
-    /*
-     * End critical area
-     */ 
     return 0;
 }
 
@@ -257,23 +276,37 @@ int transmitter_module(char* file_name, int semaphores, data_packet_t* memory) {
         return -1;
     }
 
-    /*
-     * Start critical area
-     */
+    ADD_OPER(0, RCV_M, P, 0);
+    ADD_OPER(1, RCV_M, V, 0);
+    if (DO_OPER(2) == -1) {
+        perror("");
+        return -1;
+    }
+
     int file_d = open(file_name, O_RDONLY);
     int16_t cur_size = DATA_SIZE;
 
     while (cur_size > 0) {
-        ADD_OPER(0, MEM_M, ZW, 0);
-        if (DO_OPER(1) == -1) {
+        /*
+         * Check death receiver
+         * Wait zero MEM_M
+         */
+        ADD_OPER(0, RCV_M, P,  IPC_NOWAIT);
+        ADD_OPER(1, RCV_M, V,  0);
+        ADD_OPER(2, MEM_M, ZW, 0);
+
+        if (DO_OPER(3) == -1) {
             perror("");
             return -1;
         }
-
+        /*
+         * Critical area start
+         */
         cur_size = read(file_d, memory->data, DATA_SIZE);
         memory->size = cur_size;
-        //fprintf(stderr, "Block %dB sent.\n", cur_size);
-        
+        /*
+         * Critical area end
+         */
         ADD_OPER(0, MEM_M, V, 0);
         if (DO_OPER(1) == -1) {
             perror("");
@@ -287,8 +320,5 @@ int transmitter_module(char* file_name, int semaphores, data_packet_t* memory) {
     }
 
     close(file_d);
-    /*
-     * End critical area
-     */
 	return 0;
 }

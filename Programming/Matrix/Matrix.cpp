@@ -272,8 +272,8 @@ std::string size( const TMatrix<DataT> &TM ) {
 template <typename DataT>
 DataT det( const TMatrix<DataT> &TM ) {
 	TM.IsOK();
-	if ( TM.GetRowsNumber() != TM.GetLinesNumber() )
-		throw TMException(TM.errDET);
+	//if ( TM.GetRowsNumber() != TM.GetLinesNumber() )
+		//throw TMException(TM.errDET);
 	TMatrix<double> TempMatrix = TM;
 	double Det=1;
     for (int i=0; i<TM.Size.x; i++)
