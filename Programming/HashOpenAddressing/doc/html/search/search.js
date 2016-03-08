@@ -7,12 +7,14 @@
 
 var indexSectionsWithContent =
 {
-  0: "dhms",
+  0: "bcdfhms",
   1: "h",
   2: "hm",
   3: "hm",
-  4: "dhs",
-  5: "d"
+  4: "cdhs",
+  5: "d",
+  6: "d",
+  7: "bdf"
 };
 
 var indexSectionNames =
@@ -22,7 +24,9 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "typedefs"
+  5: "typedefs",
+  6: "enums",
+  7: "enumvalues"
 };
 
 function convertToId(search)

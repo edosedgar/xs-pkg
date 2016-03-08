@@ -68,6 +68,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>All</span></a></li>
       <li class="current"><a href="globals_func.html"><span>Functions</span></a></li>
       <li><a href="globals_type.html"><span>Typedefs</span></a></li>
+      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -76,7 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,12 +90,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 &#160;<ul>
 <li>hash_char()
-: <a class="el" href="hash__table_8h.html#a3b8081035e46bd200f13bef47de1d1fe">hash_table.h</a>
-, <a class="el" href="hash__table_8c.html#a3b8081035e46bd200f13bef47de1d1fe">hash_table.c</a>
+: <a class="el" href="hash__table_8h.html#afd64a7764fb69cd9577d0d9bdd9e84dc">hash_table.h</a>
+, <a class="el" href="hash__table_8c.html#afd64a7764fb69cd9577d0d9bdd9e84dc">hash_table.c</a>
 </li>
 <li>hash_create()
-: <a class="el" href="hash__table_8h.html#a8dc7994b70201f728683b721583109f7">hash_table.h</a>
-, <a class="el" href="hash__table_8c.html#a8dc7994b70201f728683b721583109f7">hash_table.c</a>
+: <a class="el" href="hash__table_8h.html#ada33c8f727179d2cdcc2032713229dd4">hash_table.h</a>
+, <a class="el" href="hash__table_8c.html#ada33c8f727179d2cdcc2032713229dd4">hash_table.c</a>
 </li>
 <li>hash_delete()
 : <a class="el" href="hash__table_8h.html#ab7367e5c256de87e3504937e306eed3a">hash_table.h</a>
@@ -103,9 +105,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="hash__table_8h.html#a0ef35a4b231ba1bd9dc700ffdfb1d93b">hash_table.h</a>
 , <a class="el" href="hash__table_8c.html#a0ef35a4b231ba1bd9dc700ffdfb1d93b">hash_table.c</a>
 </li>
+<li>hash_dump()
+: <a class="el" href="main_8c.html#a17eb8b1772f59786b85a8d33c31e819d">main.c</a>
+</li>
 <li>hash_insert()
 : <a class="el" href="hash__table_8h.html#a7eb5c9a891a1f71d705b2f175b5a0f1c">hash_table.h</a>
 , <a class="el" href="hash__table_8c.html#a7eb5c9a891a1f71d705b2f175b5a0f1c">hash_table.c</a>
+</li>
+<li>hash_iter_current()
+: <a class="el" href="hash__table_8h.html#a89980c5dcde6219f36e5ea3a19ad7dab">hash_table.h</a>
+, <a class="el" href="hash__table_8c.html#a89980c5dcde6219f36e5ea3a19ad7dab">hash_table.c</a>
+</li>
+<li>hash_iter_next()
+: <a class="el" href="hash__table_8h.html#a68fff2d7a84e5a6c75e90c64687ba314">hash_table.h</a>
+, <a class="el" href="hash__table_8c.html#a68fff2d7a84e5a6c75e90c64687ba314">hash_table.c</a>
+</li>
+<li>hash_iter_reset()
+: <a class="el" href="hash__table_8h.html#ad0564b2e01f788134bf3b25f2a6067b6">hash_table.h</a>
+, <a class="el" href="hash__table_8c.html#ad0564b2e01f788134bf3b25f2a6067b6">hash_table.c</a>
 </li>
 <li>hash_search()
 : <a class="el" href="hash__table_8h.html#ae84d767cca88aa1601c11b5a98c77da7">hash_table.h</a>
@@ -118,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2016 02:58:39 for Hash table by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 8 2016 21:50:49 for Hash table by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

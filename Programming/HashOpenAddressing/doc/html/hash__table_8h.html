@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hash_table.h File Reference</div>  </div>
@@ -111,14 +112,23 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ae3e697f56e1690aa7d93ed646be95639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main data type, using in hash table. Now it is string with length no more than 255.  <a href="#ae3e697f56e1690aa7d93ed646be95639">More...</a><br/></td></tr>
 <tr class="separator:ae3e697f56e1690aa7d93ed646be95639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a8ee7e67bb74780b7bd5d74fa12b30c0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0e">deleted_t</a> { <a class="el" href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0eacc62d1576546f3245237e1b232d838b6">FREE</a> = 0, 
+<a class="el" href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0eaa6e504d57ec9777faa0185fbd3b93b97">BUSY</a> = 1, 
+<a class="el" href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0eaae88752b9379248f07e2c3fdc064d998">DELETED</a> = 2
+ }</td></tr>
+<tr class="memdesc:a8ee7e67bb74780b7bd5d74fa12b30c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">State of 'deleted' flag.  <a href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0e">More...</a><br/></td></tr>
+<tr class="separator:a8ee7e67bb74780b7bd5d74fa12b30c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3b8081035e46bd200f13bef47de1d1fe"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a3b8081035e46bd200f13bef47de1d1fe">hash_char</a> (<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a> data)</td></tr>
-<tr class="memdesc:a3b8081035e46bd200f13bef47de1d1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple hash function, which summarizes each ascii code of symbol and returns it.  <a href="#a3b8081035e46bd200f13bef47de1d1fe">More...</a><br/></td></tr>
-<tr class="separator:a3b8081035e46bd200f13bef47de1d1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc7994b70201f728683b721583109f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhash__t.html">hash_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a8dc7994b70201f728683b721583109f7">hash_create</a> (unsigned size, unsigned(*hash_f)(<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>))</td></tr>
-<tr class="memdesc:a8dc7994b70201f728683b721583109f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash constructor gets size and returns object. Constructor allocates memory for hash table.  <a href="#a8dc7994b70201f728683b721583109f7">More...</a><br/></td></tr>
-<tr class="separator:a8dc7994b70201f728683b721583109f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd64a7764fb69cd9577d0d9bdd9e84dc"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#afd64a7764fb69cd9577d0d9bdd9e84dc">hash_char</a> (<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a> data, unsigned size)</td></tr>
+<tr class="memdesc:afd64a7764fb69cd9577d0d9bdd9e84dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple hash function, which summarizes each ascii code of symbol and returns it.  <a href="#afd64a7764fb69cd9577d0d9bdd9e84dc">More...</a><br/></td></tr>
+<tr class="separator:afd64a7764fb69cd9577d0d9bdd9e84dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada33c8f727179d2cdcc2032713229dd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhash__t.html">hash_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#ada33c8f727179d2cdcc2032713229dd4">hash_create</a> (unsigned size, unsigned(*hash_f)(<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>, unsigned))</td></tr>
+<tr class="memdesc:ada33c8f727179d2cdcc2032713229dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash constructor gets size and returns object. Constructor allocates memory for hash table.  <a href="#ada33c8f727179d2cdcc2032713229dd4">More...</a><br/></td></tr>
+<tr class="separator:ada33c8f727179d2cdcc2032713229dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb5c9a891a1f71d705b2f175b5a0f1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a7eb5c9a891a1f71d705b2f175b5a0f1c">hash_insert</a> (<a class="el" href="structhash__t.html">hash_t</a> *object, <a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a> data)</td></tr>
 <tr class="memdesc:a7eb5c9a891a1f71d705b2f175b5a0f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash method for inserting object to table.  <a href="#a7eb5c9a891a1f71d705b2f175b5a0f1c">More...</a><br/></td></tr>
 <tr class="separator:a7eb5c9a891a1f71d705b2f175b5a0f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +141,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a0ef35a4b231ba1bd9dc700ffdfb1d93b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a0ef35a4b231ba1bd9dc700ffdfb1d93b">hash_destroy</a> (<a class="el" href="structhash__t.html">hash_t</a> *object)</td></tr>
 <tr class="memdesc:a0ef35a4b231ba1bd9dc700ffdfb1d93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash method for destroying hash table.  <a href="#a0ef35a4b231ba1bd9dc700ffdfb1d93b">More...</a><br/></td></tr>
 <tr class="separator:a0ef35a4b231ba1bd9dc700ffdfb1d93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89980c5dcde6219f36e5ea3a19ad7dab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a89980c5dcde6219f36e5ea3a19ad7dab">hash_iter_current</a> (<a class="el" href="structhash__t.html">hash_t</a> *object)</td></tr>
+<tr class="memdesc:a89980c5dcde6219f36e5ea3a19ad7dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash iterator for accessing to each element's. <br/>
+ reset - rewind index to start <br/>
+ next - get next element <br/>
+ current - get current element <br/>
+ When point will reach a finish, pointer automatically will reset.  <a href="#a89980c5dcde6219f36e5ea3a19ad7dab">More...</a><br/></td></tr>
+<tr class="separator:a89980c5dcde6219f36e5ea3a19ad7dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68fff2d7a84e5a6c75e90c64687ba314"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#a68fff2d7a84e5a6c75e90c64687ba314">hash_iter_next</a> (<a class="el" href="structhash__t.html">hash_t</a> *object)</td></tr>
+<tr class="separator:a68fff2d7a84e5a6c75e90c64687ba314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0564b2e01f788134bf3b25f2a6067b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hash__table_8h.html#ad0564b2e01f788134bf3b25f2a6067b6">hash_iter_reset</a> (<a class="el" href="structhash__t.html">hash_t</a> *object)</td></tr>
+<tr class="separator:ad0564b2e01f788134bf3b25f2a6067b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Library(header) for hash table with open addressing. </p>
@@ -151,8 +172,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a8ee7e67bb74780b7bd5d74fa12b30c0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hash__table_8h.html#a8ee7e67bb74780b7bd5d74fa12b30c0e">deleted_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>State of 'deleted' flag. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a8ee7e67bb74780b7bd5d74fa12b30c0eacc62d1576546f3245237e1b232d838b6"></a>FREE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8ee7e67bb74780b7bd5d74fa12b30c0eaa6e504d57ec9777faa0185fbd3b93b97"></a>BUSY</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a8ee7e67bb74780b7bd5d74fa12b30c0eaae88752b9379248f07e2c3fdc064d998"></a>DELETED</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a3b8081035e46bd200f13bef47de1d1fe"></a>
+<a class="anchor" id="afd64a7764fb69cd9577d0d9bdd9e84dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -160,8 +204,18 @@ Functions</h2></td></tr>
           <td class="memname">unsigned hash_char </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -170,6 +224,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data, which you hash. </td></tr>
+    <tr><td class="paramname">size</td><td>Size of hash table. </td></tr>
   </table>
   </dd>
 </dl>
@@ -177,7 +232,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8dc7994b70201f728683b721583109f7"></a>
+<a class="anchor" id="ada33c8f727179d2cdcc2032713229dd4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -190,7 +245,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned(*)(<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>)&#160;</td>
+          <td class="paramtype">unsigned(*)(<a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a>, unsigned)&#160;</td>
           <td class="paramname"><em>hash_f</em>&#160;</td>
         </tr>
         <tr>
@@ -246,7 +301,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>If data has already been deleted, then subroutines returns FAILURE, otherwise SUCCESS. <br/>
+<dl class="section return"><dt>Returns</dt><dd>If data has already been deleted, then subroutines returns EXIT_FAILURE, otherwise EXIT_SUCCESS. <br/>
  EINVAL Uncorrect parameters. </dd></dl>
 
 </div>
@@ -272,7 +327,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The SUCCESS or FAILURE status. <br/>
+<dl class="section return"><dt>Returns</dt><dd>The EXIT_SUCCESS or EXIT_FAILURE status. <br/>
  EINVAL Uncorrect parameters. </dd></dl>
 
 </div>
@@ -309,9 +364,71 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The SUCCESS or FAILURE status. <br/>
+<dl class="section return"><dt>Returns</dt><dd>The EXIT_SUCCESS or EXIT_FAILURE status. <br/>
  EOVERFLOW Hash table is oversize. <br/>
  EINVAL Uncorrect parameters. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89980c5dcde6219f36e5ea3a19ad7dab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="hash__table_8h.html#ae3e697f56e1690aa7d93ed646be95639">data_t</a> hash_iter_current </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhash__t.html">hash_t</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hash iterator for accessing to each element's. <br/>
+ reset - rewind index to start <br/>
+ next - get next element <br/>
+ current - get current element <br/>
+ When point will reach a finish, pointer automatically will reset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>Your object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The EXIT_SUCCESS, EXIT_FAILURE or element, (data_t)NULL. <br/>
+ EINVAL Uncorrect parameters. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68fff2d7a84e5a6c75e90c64687ba314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hash_iter_next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhash__t.html">hash_t</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad0564b2e01f788134bf3b25f2a6067b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hash_iter_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structhash__t.html">hash_t</a> *&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -356,7 +473,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 7 2016 02:58:39 for Hash table by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 8 2016 21:50:49 for Hash table by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
