@@ -75,7 +75,24 @@ data_t hash_search(hash_t* object, data_t data) {
         errno = EINVAL;
         return (data_t)NULL;
     }
-    data = data;
+    unsigned index = object->hash_f(data, object->size);
+    if (object->hash_data[index].status == FREE) {
+        errno = EAGAIN;
+        return (data_t)NULL;
+    }
+
+    unsigned cycle_var = index;
+    while (object->hash_data[cycle_var].status != FREE) {
+        if (object->hash_data[cycle_var].status == BUSY &&
+            memcmp(&(object->hash_data[cycle_var].data), &data, \
+            sizeof(data)) == 0) 
+            return object->hash_data[cycle_var].data;
+        cycle_var++;
+        cycle_var %= object->size;
+        if (cycle_var == index)
+            break;
+    }
+    errno = EAGAIN;    
     return (data_t)NULL;
 }
 
@@ -112,13 +129,13 @@ int hash_delete(hash_t* object, data_t data) {
 int hash_destroy(hash_t* object) {
     if (object == NULL) {
         errno = EINVAL;
-        return EXIT_SUCCESS;
+        return EXIT_FAILURE;
     }
     object->size = 0;
     object->hash_f = NULL;
     free(object->hash_data);
     free(object);
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 /*****************************************************************************/
@@ -137,6 +154,7 @@ int hash_iter_next(hash_t* object) {
         return EXIT_FAILURE;
     } 
     object->current_iter_pos++;
+    object->current_iter_pos %= object->size;
     return EXIT_SUCCESS;
 
 }

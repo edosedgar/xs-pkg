@@ -66,6 +66,7 @@ unsigned hash_char(data_t data, unsigned size);
  * @param  hash_f Hash function.
  * @return The initialized object. 
  *    <br> EINVAL Uncorrect parameters.
+ *    <br> ENOMEM No memory.
  */
 hash_t* hash_create(unsigned size, unsigned (*hash_f)(data_t, unsigned));
 
