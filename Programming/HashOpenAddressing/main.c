@@ -123,8 +123,15 @@ int main(int argc, char* argv[]) {
     
     TEST_CAPTION("hash_iter_reset(invalid args)");
     TEST_RESULT(hash_iter_reset(NULL) == EXIT_FAILURE && errno == EINVAL);
- 
+
+    TEST_CAPTION("hash_iter_current(when iter on last pos)");
+    TEST_RESULT(hash_iter_current(hash_table_1) == NULL);
+
+    TEST_CAPTION("hash_iter_current(again)");
+    TEST_RESULT(hash_iter_current(hash_table_1) == NULL);
+
     TEST_CAPTION("hash_iter_current(valid hash table)");
+    hash_iter_reset(hash_table_1);
     TEST_RESULT(strcmp(hash_iter_current(hash_table_1), text_1) == 0);
 
     TEST_CAPTION("hash_iter_next(valid hash table)");
@@ -183,14 +190,14 @@ int hash_dump(hash_t* object) {
     fprintf(stderr, "\033[034m**************\033[33mHASH DUMP\033[034m"
             "*************\033[0m\n");
     hash_iter_reset(object);
-    for (i = 0; i < object->size; i++) {
+    do {
         buffer = hash_iter_current(object);
         if (buffer == NULL)
             fprintf(stderr, "%d: (NULL)\n", i);
         else
             fprintf(stderr, "%d: %s\n", i, buffer);
-        hash_iter_next(object);
-    }
+        i++;
+    } while (hash_iter_next(object) != EXIT_FAILURE);
     fprintf(stderr, "\033[034m************************************\033[0m\n");
     return EXIT_SUCCESS;
 }

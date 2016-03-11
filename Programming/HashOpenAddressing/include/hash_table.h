@@ -43,7 +43,7 @@ typedef struct {
  */
 typedef struct {
     unsigned size;
-    unsigned current_iter_pos;
+    long int current_iter_pos;
     hash_element* hash_data;
     unsigned (*hash_f)(data_t, unsigned);
 } hash_t;

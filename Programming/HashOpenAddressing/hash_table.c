@@ -6,7 +6,7 @@
 /**
  * @file   hash_table.c
  * @author Edgar kaziahmedov
- * @date   unkown
+ * @date   unknown
  * @brief  Library(source) for hash table with open addressing.
  */
 
@@ -144,6 +144,8 @@ data_t hash_iter_current(hash_t* object) {
         errno = EINVAL;
         return (data_t)NULL;
     }
+    if (object->current_iter_pos == object->size)
+        return (data_t)NULL;
     return object->hash_data[object->current_iter_pos].data; 
 }
 
@@ -154,9 +156,11 @@ int hash_iter_next(hash_t* object) {
         return EXIT_FAILURE;
     } 
     object->current_iter_pos++;
-    object->current_iter_pos %= object->size;
+    if (object->current_iter_pos >= object->size) {
+        object->current_iter_pos = object->size;
+        return EXIT_FAILURE;
+    }
     return EXIT_SUCCESS;
-
 }
 
 /*****************************************************************************/
