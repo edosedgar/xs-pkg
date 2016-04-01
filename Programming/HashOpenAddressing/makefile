@@ -1,10 +1,10 @@
-CFLAGS:=-Wall --coverage -Wextra -Werror -MD -g -I$(PWD)/include/
+CFLAGS:=-Wall -pg --coverage -Wextra -Werror -MD -g3 -I$(PWD)/include/
 .PHONY: all clean
 
 all: hash
 
 hash: main.c hash_table.o
-	$(CC) --coverage -I$(PWD)/include -g -o $@  $^
+	$(CC) -pg --coverage -I$(PWD)/include -g -o $@  $^
 
 -include *.d
 
