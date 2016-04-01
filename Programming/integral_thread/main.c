@@ -24,8 +24,8 @@ typedef struct {
  * Global constants
  */
 double step = 1/10000000.0L;
-double start = -500;
-double end = 500;
+double start = -100;
+double end = 100;
 
 /*
  * Subroutine is executed in parallel
@@ -85,10 +85,12 @@ int main(int argc, char* argv[]) {
 
     for (i = 0; i < n_threads; i++) {
         CPU_ZERO(&cpus);
-        if (i == 1)
-            CPU_SET(2, &cpus);
-        else
-            CPU_SET(i, &cpus);
+        switch (i) {
+            case 0: CPU_SET(0, &cpus); break;
+            case 1: CPU_SET(2, &cpus); break;
+            case 2: CPU_SET(1, &cpus); break;
+            case 3: CPU_SET(3, &cpus); break;
+        }
         pthread_attr_setaffinity_np(&attr, sizeof(cpu_set_t), &cpus);
         pthread_create(&threads[i], &attr, calc_integral, &(info[i]));
     }
