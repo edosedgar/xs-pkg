@@ -43,7 +43,6 @@ void* calc_integral(void* args) {
                    (val + local_step) * (val + local_step));
     }
     info->result = result;
-    //fprintf(stderr, "suka:%lg %lg %lg\n", info->start_lim, info->end_lim, result);
     return EXIT_SUCCESS;
 }
 
