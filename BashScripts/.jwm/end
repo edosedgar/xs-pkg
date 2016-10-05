@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- End for program. -->
+    <ShutdownCommand>killall hdmi_switcher &amp;</ShutdownCommand>
+    
+        
+</JWM>

@@ -1,4 +1,4 @@
-CFLAGS:=-Wall -pthread -Wextra -g3 -O1 -std=gnu99
+CFLAGS:=-Wall -pthread -Wextra -g3 -O0 -std=gnu99
 LDLIBS:=-lm 
 PROJECT_NAME:=integral
 SOURCE:=main.c

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <RootMenu onroot="3">
+        <Program label="Terminal">sakura</Program>
+        <Program label="File Manager">pcmanfm</Program>
+        <Program label="Firefox">firefox</Program>
+        <Program label="Claws-Mail">claws-mail</Program>
+        <Program label="Transmission">transmission-gtk</Program>
+        <Program label="Steam">steam</Program>
+        <Program label="Skype">skype</Program>
+        <Program label="Octave">octave</Program>
+        <Separator/>
+	<Menu label="Accesories">
+	    <Program label="ImageWriter ISO/USB">imagewriter</Program>
+            <Program label="Leafpad Editor">leafpad</Program>
+        </Menu>
+        <Menu label="Graphics">
+            <Program label="Online Image Editor">firefox http://www.online-image-editor.com/</Program>
+        </Menu>
+        <Menu label="Multimedia">
+            <Program label="SMPlayer Video">smplayer</Program>
+        </Menu>
+        <Menu label="Office">
+            <Program label="AbiWord Word">abiword</Program>
+            <Program label="Gnumeric Calc">gnumeric</Program>
+            <Program label="LOffice Writer">soffice --writer</Program>
+            <Program label="LOffice Excel">soffice --calc</Program>
+            <Program label="LOffice PowerPoint">soffice --impress</Program>
+        </Menu>
+        <Menu label="Settings">
+            <Program label="ARandR Screen Editor">arandr</Program>
+            <Program label="BlueMan Adapters">blueman-adapters</Program>
+            <Program label="BlueMan Manager">blueman-manager</Program> 
+            <Program label="Configure Mouse/keyboard">lxinput</Program>
+            <Program label="Customize Look/Feel">lxappearance</Program>
+	    <Program label="Manjaro Settings Manager">gksu manjaro-settings-manager-gui</Program>
+        </Menu>
+        <Menu label="System">
+            <Program label="JWMConf Configuration">sakura -t JWMConf -x /usr/bin/jwmconf -r 30</Program>            
+	    <Program label="Pacli Package">sakura -t "Pacli" -x /usr/bin/pacli -r 30</Program>
+            <Program label="Temperature Sensors">xsensors</Program>
+        </Menu>
+        </RootMenu>
+
+</JWM>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<JWM>
+    <!-- Tray of the environment. -->
+    <Tray x="0" y="0" height="27" autohide="off" valign="top">
+	<Spacer width="5"/>
+        <TrayButton label="Applications">root:3</TrayButton>
+        <Spacer width="5"/>
+	<!-- <TrayButton label="Places">root:7</TrayButton>
+	     <Spacer width="5"/> -->
+	<!-- <Pager labeled="true"/> 
+	<Spacer width="5"/> -->
+        <TaskList maxwidth="130" border="true"/>
+	<Dock/>
+	<Spacer width="5"/>
+        <Clock format="%d %B, %a %I:%M %p"></Clock>
+	<Spacer width="5"/> 
+        <TrayButton label="[Exit]">exec:oblogout</TrayButton>
+	<Spacer width="5"/> 
+     </Tray>
+
+</JWM>

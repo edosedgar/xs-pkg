@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Options for program groups. -->
+    <Group>
+        <Name>sakura</Name>
+        <Option>noborder</Option>
+    </Group>
+ 
+    <Group>
+        <Name>pcmanfm</Name>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>vlc</Name>
+        <Option>opacity:1.0</Option>
+        <Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>oblogout</Name>
+        <Option>nolist</Option>
+	<Option>centered</Option>
+    </Group>
+
+    <Group>
+        <Name>firefox</Name>
+        <Option>opacity:1.0</Option>
+    </Group>
+
+    <Group>
+        <Name>epdfview</Name>
+        <Option>centered</Option>
+    </Group>
+
+</JWM>

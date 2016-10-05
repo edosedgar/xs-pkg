@@ -8,14 +8,10 @@ int main ( int argc, char* argv[] )
 		TMatrix<double> Matrix(argv[1]);
 		//TMatrix<double> Matrix2 = Matrix;
 		Matrix<<=3;
-		TMatrix<int> Matrix2(argv[1]);
-		Matrix2<<=4;
 		std::cout<<Matrix<<std::endl<<Matrix.GetLinesNumber()<<' '<<Matrix.GetRowsNumber()<<std::endl;
-		std::cout<<~Matrix2<<std::endl<<Matrix2.GetLinesNumber()<<' '<<Matrix2.GetRowsNumber()<<std::endl;
 		std::cout<<"Determinate: "<<det(Matrix)<<std::endl;
 		std::cout<<"Trail: "<<trail(Matrix)<<std::endl;
-		TMatrix<int> NewMatrix = Matrix2+Matrix*Matrix2;
-		std::cout<<NewMatrix<<std::endl<<size(NewMatrix)<<std::endl;;
+		//std::cout<<NewMatrix<<std::endl<<size(NewMatrix)<<std::endl;;
 		//TMatrix Matrix2(argv[1]);
 		//Matrix2<<=4;
 		//std::cout<<Matrix*Matrix2<<std::endl;

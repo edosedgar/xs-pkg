@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<JWM>
+
+    <!-- Startup for program. -->
+    <StartupCommand>compton -b --backend glx --vsync opengl-swc &amp;</StartupCommand>
+    <StartupCommand>$HOME/hdmi_routine/daemon/hdmi_switcher -r &amp;</StartupCommand>
+    <StartupCommand>sleep 1s &amp;&amp; $HOME/hdmi_routine/daemon/hdmi_switcher -t &amp;</StartupCommand>
+    <StartupCommand>sleep 2s &amp;&amp; nm-applet &amp;</StartupCommand>
+    <StartupCommand>sleep 3s &amp;&amp; cbatticon -i symbolic -u 5 -n &amp;</StartupCommand>
+    <StartupCommand>sleep 4s &amp;&amp; pa-applet --disable-notifications --disable-key-grabbing &amp;</StartupCommand>
+    <StartupCommand>sleep 5s &amp;&amp; /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &amp;</StartupCommand>
+    <StartupCommand>sleep 6s &amp;&amp; xrdb merge .Xresources &amp;</StartupCommand>
+    <StartupCommand>setxkbmap -option &amp;</StartupCommand>
+    <StartupCommand>sleep 7s &amp;&amp; setxkbmap -layout "us,ru(winkeys)" -model "pc105" -option "grp:alt_shift_toggle,grp_led:scroll" &amp;</StartupCommand>
+    
+        
+</JWM>

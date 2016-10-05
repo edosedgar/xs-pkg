@@ -24,25 +24,27 @@ typedef struct {
  * Global constants
  */
 double step = 1/10000000.0L;
-double start = -100;
-double end = 100;
+double start = -50;
+double end = 50;
 
 /*
  * Subroutine is executed in parallel
  */
 void* calc_integral(void* args) {
-    //fprintf(stderr, "ID: %lu, CPU: %u\n", pthread_self(), sched_getcpu());    
     thread_data* info = (thread_data*)args;
     double val = 0;
     double result = 0;
     double local_step = step;
-    for (val = (info->start_lim); val < (info->end_lim); val += local_step) { 
+    double local_end = info->end_lim;
+    double local_start = info->start_lim;
+    for (val = local_start; val < local_end; val += local_step) { 
         result += (local_step / 6) * \
                   (val * val + \
                    4 * (val + local_step / 2) * (val + local_step / 2) + \
                    (val + local_step) * (val + local_step));
     }
     info->result = result;
+    //fprintf(stdout, "ID: %lu, CPU: %u\n", pthread_self(), sched_getcpu());    
     return EXIT_SUCCESS;
 }
 
@@ -54,7 +56,7 @@ int main(int argc, char* argv[]) {
      * Initial routines
      */
     unsigned n_threads = 0;
-    unsigned processors = 0;
+    //unsigned processors = 0;
     unsigned i = 0;
     if (argc != 2) 
         err_exit(EINVAL);
@@ -63,16 +65,16 @@ int main(int argc, char* argv[]) {
     /*
      * Print number of online processors
      */
-    processors = sysconf(_SC_NPROCESSORS_ONLN);
-    fprintf(stderr, "Processors: %u\nThreads: %u\n", processors, n_threads);
+    /*processors = sysconf(_SC_NPROCESSORS_ONLN);
+    fprintf(stdout, "Processors: %u\nThreads: %u\n", processors, n_threads);
     if (n_threads > processors)
-        err_exit(ENOTSUP);
+        err_exit(ENOTSUP);*/
     /*
      * Bind to processor and start to calculate
      */
     pthread_t* threads = (pthread_t*)malloc(n_threads * sizeof(*threads));
     pthread_attr_t attr;
-    cpu_set_t cpus;
+    //cpu_set_t cpus;
     pthread_attr_init(&attr);
     thread_data* info = (thread_data*)malloc(n_threads * sizeof(*info));
 
@@ -83,14 +85,14 @@ int main(int argc, char* argv[]) {
     }
 
     for (i = 0; i < n_threads; i++) {
-        CPU_ZERO(&cpus);
+        /*CPU_ZERO(&cpus);
         switch (i) {
             case 0: CPU_SET(0, &cpus); break;
             case 1: CPU_SET(2, &cpus); break;
             case 2: CPU_SET(1, &cpus); break;
             case 3: CPU_SET(3, &cpus); break;
         }
-        pthread_attr_setaffinity_np(&attr, sizeof(cpu_set_t), &cpus);
+        pthread_attr_setaffinity_np(&attr, sizeof(cpu_set_t), &cpus);*/
         pthread_create(&threads[i], &attr, calc_integral, &(info[i]));
     }
     /*

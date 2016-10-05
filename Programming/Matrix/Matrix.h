@@ -11,12 +11,12 @@ template<typename DataT> class TMatrix;
 
 //******************* Prototype of friend functions ****************************
 template <typename DataT> std::ostream& operator<<(std::ostream &OSTR,\
-												   const TMatrix<DataT> &TM);
-template <typename DataT> std::string size(const TMatrix<DataT> &TM);								
+						   const TMatrix<DataT> &TM);
+template <typename DataT> std::string size(const TMatrix<DataT> &TM);	
 template <typename DataT> DataT det( const TMatrix<DataT> &TM );
 template <typename DataT> DataT trail( const TMatrix<DataT> &TM );
-template <typename DataT> TMatrix<DataT> operator*(double Mul1,\
-												   const TMatrix<DataT> &TM);
+template <typename DataT> TMatrix<DataT> operator*(double Mul1, 
+                                                   const TMatrix<DataT> &TM);
 template <typename DataT> TMatrix<DataT> operator~(const TMatrix<DataT> &TM);
 //******************************************************************************
 
@@ -24,7 +24,6 @@ template <typename DataT> TMatrix<DataT> operator~(const TMatrix<DataT> &TM);
 template <typename DataT>
 class TMatrix {
 public:	
-////
 	explicit TMatrix(char* MatrixStore);	
 	TMatrix(char* MatrixStore, unsigned y, unsigned x);
 	TMatrix(const TMatrix &TM);
@@ -33,8 +32,8 @@ public:
 	unsigned GetRowsNumber() const;
 	unsigned GetLinesNumber() const;
 	int operator<<=(unsigned id);
-	friend std::ostream& operator<< <>(std::ostream &OSTR,\
-									   const TMatrix &TM);
+	friend std::ostream& operator<< <>(std::ostream &OSTR,
+                                           const TMatrix &TM);
 	friend std::string size <>( const TMatrix &TM );
 	friend DataT det <>( const TMatrix &TM );
 	friend DataT trail<>( const TMatrix &TM );
@@ -51,7 +50,7 @@ public:
 	//**************** Exception class ***********************
 	class TMException : public std::exception {
 	public:
-		explicit TMException ( unsigned Error );
+		explicit TMException (unsigned Error);
 		const char* what();
 	private:
 		const char* Errors[]={
@@ -62,11 +61,14 @@ public:
 			"Matrix not found.",
 			"No memory.",
 			"Unsupported symbol in matrix storage.",
-			"Cannot assigned. The dimensions of the matrices are not equal.",
+			"Cannot assigned. The dimensions of the"
+                        " matrices are not equal.",
 			"Cannot multiply two matrices.",
 			"Out of range.",
-			"Cannot add. The dimensions of the matrices are not equal.",
-			"Cannot substraction. The dimensions of the matrices are not equal.",
+			"Cannot add. The dimensions of the matrices"
+                        " are not equal.",
+			"Cannot substraction. The dimensions of the matrices"
+                        " are not equal.",
 			"Matrix isn't square. Cannot calculate determinate.",
 			"Matrix isn't square. Cannot calculate trail."
 		};
@@ -94,7 +96,7 @@ private:
 		unsigned x;
 		unsigned y;
 	} Size;	
-	const double Accuracy=0.001;
+	double Accuracy=0.001;
 	DataT** Data;
 	char* Storage;
 };
