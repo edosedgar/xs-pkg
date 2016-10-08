@@ -18,17 +18,18 @@
 /*
  * Change constants and enjoy yourself
  */
-const char* pCommonFIFO = "/tmp/hdmi.pipe";
-const int BufferSize    = 1;
-char HDMI_STATUS_PATH[] = "/sys/class/drm/card0-HDMI-A-1/status"; 
-char HDMI_CONF_PATH[]   = "/home/medos/hdmi_routine/hdmi.conf"; 
-char LID_STATUS_PATH[]  = "/proc/acpi/button/lid/LID0/state"; 
-char INTERNAL_SCRIPT[]  = "/home/medos/hdmi_routine/internal.sh";
-char SYSTEMD_CTL[]      = "/usr/bin/systemctl"; 
-char EXTERNAL_SCRIPT[]  = "/home/medos/hdmi_routine/internal.sh";
-char EXPAND_SCRIPT[]    = "/home/medos/hdmi_routine/expand.sh";
-char FEH_PATH[]         = "/usr/bin/feh";
-char BG_PICTURE[]       = "/home/medos/Pictures/linux-tux-luv-love.jpg";
+const char* pCommonFIFO        = "/tmp/hdmi.pipe";
+const int   BufferSize         = 1;
+char        HDMI_STATUS_PATH[] = "/sys/class/drm/card0-HDMI-A-1/status"; 
+char        HDMI_CONF_PATH[]   = "/home/medos/.config/hdmi_switcher/mode"; 
+char        LID_STATUS_PATH[]  = "/proc/acpi/button/lid/LID0/state"; 
+char        INTERNAL_SCRIPT[]  = "/home/medos/.config/hdmi_switcher/internal.sh";
+char        SYSTEMD_CTL[]      = "/usr/bin/systemctl"; 
+char        EXTERNAL_SCRIPT[]  = "/home/medos/.config/hdmi_switcher/external.sh";
+char        EXPAND_SCRIPT[]    = "/home/medos/.config/hdmi_switcher/expand.sh";
+char        BACKLIGHT_SCRIPT[] = "/home/medos/.config/hdmi_switcher/backlight.sh";
+char        FEH_PATH[]         = "/usr/bin/feh";
+char        BG_PICTURE[]       = "/home/medos/Pictures/linux-tux-luv-love.jpg";
 
 
 
@@ -74,9 +75,14 @@ static void usage(unsigned status)
         else {
                 printf("Usage: hdmi_switcher OPTIONS \n");
                 printf("\n"
-                       "-r    Receiver mode                      \n"
-                       "-t    Tramsmitter mode                 \n\n"
-                       "Author: Edgar Kaziahmedov edos@linux.com \n");
+                       "-r    Receiver mode                       \n"
+                       "-t    Tramsmitter mode                    \n"
+                       "                                          \n"
+                       "The string in ~/.config/hdmi_switcher/mode\n"
+                       "characterizes the work mode of program:   \n"
+                       "\"expand\" - two desktops                 \n"
+                       "\"switch\" - external desktop           \n\n"
+                       "Author: Edgar Kaziahmedov edos@linux.com  \n");
         }
         exit(status);
 }
@@ -224,6 +230,21 @@ int update_desktop() {
         return 0;
 }
 
+int set_backlight() {
+        int child = 0;
+        int code = 1;
+        while (code != 0) {
+                child = fork();
+                if (child == 0) {
+                        execl(BACKLIGHT_SCRIPT, BACKLIGHT_SCRIPT, NULL);
+                        exit(EXIT_FAILURE);
+                } else {
+                        waitpid(child, &code, 0);
+                }
+        }
+        return 0;
+}
+
 int ReceiverModule(void){
 	//Create common fifo or use exist
 	mkfifo( pCommonFIFO, 0666 );
@@ -235,7 +256,7 @@ int ReceiverModule(void){
 
 	//Start receive
 	while (read(CommonFIFO, &Buffer, BufferSize) == BufferSize) {
-                //sleep(1);
+                usleep(500);
 		hdmi_status = getHDMIstatus();
 	        if (hdmi_status == 1)  
                         syslog(LOG_NOTICE, "HDMI is connected");
@@ -270,6 +291,7 @@ int TransmitterModule(char* FileName){
 	int CommonFIFO = open ( pCommonFIFO, O_WRONLY );
         write(CommonFIFO, &Buffer, BufferSize);
 	close( CommonFIFO );
+        set_backlight();
 	return 0;
 }
 
