@@ -17,8 +17,9 @@ SHELL_M=""
 # Show help
 if [[ "$1" == "-h" || "$1" == "--help" ]];
 then
-        echo "Usage: [OPTION] FILE"
+        echo "Usage: ""$0"" [OPTION] FILE"
         echo "Add users, who were decribed in FILE, in system."
+        echo ""
         echo "Format records in FILE:"
         echo "<USER_NAME>:<HASH_PASSWD>:<GROUPS>:<UID>:<HOME_DIR>:<INFO>:SHELL>"
         echo ""
@@ -31,8 +32,8 @@ then
         echo "                    account, that script doesn't allow to attach one"
         echo "                    home directory to 2 and more users. If folder"
         echo "                    doesn't exist, it will be created."
-        echo "<INFO>            - additional info about user(name, phone etc.)."
-        echo "<SHELL>           - user shell, default is /usr/bin/nologin."
+        echo "<INFO>            - additional info about user(name, phone etc)."
+        echo "<SHELL>           - user shell, default is /bin/bash."
         echo ""
         echo "NOTE: Script should be executed as root."
         echo "Author: Edgar Kaziahmedov edos@linux.com"
