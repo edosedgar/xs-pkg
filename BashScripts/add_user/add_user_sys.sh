@@ -4,7 +4,8 @@ WATCHDOG=65536
 USERADD_OPT=""
 FILE_NAME=""
 CHECK_HOME_DIR=""
-USERADD="useradd"
+USERADD=`which useradd`
+EMPTY_PASS="ghzH2L293Q.rM"
 # Current values
 USER_NAME=""
 HASH_PASSWD=""
@@ -80,21 +81,22 @@ do
                 echo "<USER_NAME> on line ""$i"" wasn't set. Line was skipped."
                 continue
         fi
-        USERADD_OPT="${USER_NAME// }"
         # HASH_PASSWD
         if [[ ! -z "${HASH_PASSWD// }" ]];
         then
-                USERADD_OPT=$USERADD_OPT" -p ""${HASH_PASSWD// }"       
+                USERADD_OPT="$USERADD_OPT""-p ""${HASH_PASSWD// }"" "       
+        else
+                USERADD_OPT="$USERADD_OPT""-p ""$EMPTY_PASS"" "
         fi
         # GROUPS
         if [[ ! -z "${GROUPS_M// }" ]];
         then
-                USERADD_OPT=$USERADD_OPT" -G ""${GROUPS_M// }"       
+                USERADD_OPT="$USERADD_OPT""-G ""${GROUPS_M// }"" "
         fi
         # UID
         if [[ ! -z "${UID_M// }" ]];
         then
-                USERADD_OPT=$USERADD_OPT" -o -u ""${UID_M// }"       
+                USERADD_OPT="$USERADD_OPT""-o -u ""${UID_M// }"" "
         fi
         # HOME_DIR
         if [[ ! -z "${HOME_DIR// }" ]];
@@ -105,22 +107,23 @@ do
                         echo "<HOME_DIR> on line ""$i"" is used by another user. Line was skipped."
                         continue
                 fi
-                USERADD_OPT=$USERADD_OPT" -m -d ""${HOME_DIR// }"
+                USERADD_OPT="$USERADD_OPT""-d ""${HOME_DIR// }"" -m "
         fi 
         # INFO
         if [[ ! -z "${INFO// }" ]];
         then
-                USERADD_OPT=$USERADD_OPT" -c ""$INFO"       
+                USERADD_OPT="$USERADD_OPT""-c ""\"$INFO\""" "
         fi
         # SHELL
         if [[ ! -z "${SHELL_M// }" ]];
         then    
-                USERADD_OPT=$USERADD_OPT" -s ""$SHELL_M" 
+                USERADD_OPT="$USERADD_OPT""-s ""$SHELL_M"" "
         else
-                USERADD_OPT=$USERADD_OPT" -s /bin/bash"
+                USERADD_OPT="$USERADD_OPT""-s /bin/bash"" "
         fi
+        USERADD_OPT="$USERADD_OPT"" ""${USER_NAME// }"
         # Main action
-        #"$USERADD"" ""$USERADD_OPT"
+        eval $USERADD ${USERADD_OPT[@]}
         # Check 
         if [ $? -eq 9 ];
         then 

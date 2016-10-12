@@ -4,6 +4,6 @@
 #include "stdio.h"
 
 int main() {
-        fprintf(stderr, "%s\n", crypt("qwerty", "ghnjden"));
+        fprintf(stderr, "%s\n", crypt("", "ghnjden"));
         return 0;
 }
