@@ -36,6 +36,7 @@ then
         echo "<SHELL>           - user shell, default is /bin/bash."
         echo ""
         echo "NOTE: Script should be executed as root."
+        echo "REQUIRED program to work: useradd, awk, id, cat."
         echo "Author: Edgar Kaziahmedov edos@linux.com"
         exit 0;
 fi
