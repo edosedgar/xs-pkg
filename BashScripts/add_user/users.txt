@@ -1,1 +1,1 @@
-nedos::video::/home/nedos:Edgar Kaziahmedov:/bin/bash
+nedos::video,hi::/home/nedos::/bin/bash

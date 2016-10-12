@@ -1,11 +1,9 @@
 #!/usr/bin/bash
 
-WATCHDOG=65536
 USERADD_OPT=""
 FILE_NAME=""
 CHECK_HOME_DIR=""
 USERADD=`which useradd`
-EMPTY_PASS="ghzH2L293Q.rM"
 # Current values
 USER_NAME=""
 HASH_PASSWD=""
@@ -37,7 +35,7 @@ then
         echo "<SHELL>           - user shell, default is /bin/bash."
         echo ""
         echo "NOTE: Script should be executed as root."
-        echo "REQUIRED program to work: useradd, awk, id, cat."
+        echo "REQUIRED program to work: useradd, awk, id, cat, tr, groupadd, wc"
         echo "Author: Edgar Kaziahmedov edos@linux.com"
         exit 0;
 fi
@@ -51,29 +49,33 @@ then
         exit 1;
 fi
 
-# Check on existance FILE
+# Check on existence FILE
 FILE_NAME="$1"
-if [ ! -f "$PWD"/"$FILE_NAME" ];
+if [ ! -f "$FILE_NAME" ];
 then
         echo "File doesn't exist!"
         exit 1;
 fi
 
+FILE_LINES=($(wc -l "$FILE_NAME"))
+WATCHDOG=${FILE_LINES[0]}
+
 for i in `seq 1 "$WATCHDOG"`
 do
         USERADD_OPT=""
-        USER_NAME=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $1; exit 0}'`
-        HASH_PASSWD=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $2; exit 0}'`
-        GROUPS_M=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $3; exit 0}'`
-        UID_M=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $4; exit 0}'`
-        HOME_DIR=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $5; exit 0}'`
-        INFO=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $6; exit 0}'`
-        SHELL_M=`cat "$PWD"/"$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $7; exit 0}'`
-        # Check on EOF
+        USER_NAME=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $1; exit 0}'`
+        HASH_PASSWD=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $2; exit 0}'`
+        GROUPS_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $3; exit 0}'`
+        UID_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $4; exit 0}'`
+        HOME_DIR=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $5; exit 0}'`
+        INFO=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $6; exit 0}'`
+        SHELL_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $7; exit 0}'`
+        # Check on blank line
         if [[ "$USER_NAME" == "" &&  "$HASH_PASSWD" == "" && "$GROUPS_M" == "" &&  
               "$UID_M" == "" && "$HOME_DIR" == "" && "$INFO" == "" && "$SHELL_M" == "" ]];
         then
-                exit 0;
+                echo "Line ""$i"" was skipped due to it's an empty."
+                continue;
         fi
         # Let's process all options
         if [[ -z "${USER_NAME// }" ]];
@@ -85,13 +87,16 @@ do
         if [[ ! -z "${HASH_PASSWD// }" ]];
         then
                 USERADD_OPT="$USERADD_OPT""-p ""${HASH_PASSWD// }"" "       
-        else
-                USERADD_OPT="$USERADD_OPT""-p ""$EMPTY_PASS"" "
         fi
         # GROUPS
         if [[ ! -z "${GROUPS_M// }" ]];
         then
                 USERADD_OPT="$USERADD_OPT""-G ""${GROUPS_M// }"" "
+                # Let's add new group, if they don't exist
+                HANDLED_GR=$(tr , \ <<< "${GROUPS_M// }")
+                for CUR_GR in $(echo $HANDLED_GR); do
+                        groupadd $CUR_GR > /dev/null 2>&1
+                done
         fi
         # UID
         if [[ ! -z "${UID_M// }" ]];
