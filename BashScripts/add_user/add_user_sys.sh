@@ -12,6 +12,7 @@ UID_M=""
 HOME_DIR=""
 INFO=""
 SHELL_M=""
+PRIM_GROUP=""
 
 # Show help
 if [[ "$1" == "-h" || "$1" == "--help" ]];
@@ -24,8 +25,12 @@ then
         echo ""
         echo "<USER_NAME>       - user name to log in."
         echo "<HASH_PASSWD>     - hashed password by crypt()."
+        echo "<PRIM_GROUP>      - primary group. The default value is defined in"
+        echo "                    /etc/default/useradd. If groups doesn't exist,"
+        echo "                    it will be created."
         echo "<GROUPS>          - additional groups, items should be separated"
-        echo "                    by a comma."
+        echo "                    by a comma. If groups doesn't exist, it will"
+        echo "                    be created."
         echo "<UID>             - user id, the default is determinated by useradd."
         echo "<HOME_DIR>        - home directory of new user, but take into"
         echo "                    account, that script doesn't allow to attach one"
@@ -49,8 +54,15 @@ then
         exit 1;
 fi
 
-# Check on existence FILE
+# Check on existence FILE and FILE as argument
 FILE_NAME="$1"
+
+if [[ -z "${FILE_NAME// }" ]]
+then
+        echo "File wasn't specified."
+        exit 1;
+fi
+
 if [ ! -f "$FILE_NAME" ];
 then
         echo "File doesn't exist!"
@@ -65,11 +77,12 @@ do
         USERADD_OPT=""
         USER_NAME=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $1; exit 0}'`
         HASH_PASSWD=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $2; exit 0}'`
-        GROUPS_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $3; exit 0}'`
-        UID_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $4; exit 0}'`
-        HOME_DIR=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $5; exit 0}'`
-        INFO=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $6; exit 0}'`
-        SHELL_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $7; exit 0}'`
+        PRIM_GROUP=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $3; exit 0}'`
+        GROUPS_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $4; exit 0}'`
+        UID_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $5; exit 0}'`
+        HOME_DIR=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $6; exit 0}'`
+        INFO=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $7; exit 0}'`
+        SHELL_M=`cat "$FILE_NAME" | awk -F ":" -v it="$i" 'NR==it {print $8; exit 0}'`
         # Check on blank line
         if [[ "$USER_NAME" == "" &&  "$HASH_PASSWD" == "" && "$GROUPS_M" == "" &&  
               "$UID_M" == "" && "$HOME_DIR" == "" && "$INFO" == "" && "$SHELL_M" == "" ]];
@@ -88,15 +101,51 @@ do
         then
                 USERADD_OPT="$USERADD_OPT""-p ""${HASH_PASSWD// }"" "       
         fi
+        # PRIM_GROUPS
+        if [[ ! -z "${PRIM_GROUP// }" ]];
+        then
+                USERADD_OPT="$USERADD_OPT""-g ""${PRIM_GROUP// }"" "
+                # Let's add new group, if they don't exist
+                groupadd ${PRIM_GROUP// } > /dev/null 2>&1
+                EXIT_CODE=$?
+                if [ $EXIT_CODE -eq 3 ];
+                then
+                        echo "Primary group name is invalid. Line ""$i"" was skipped."
+                        continue
+                fi
+                if [[ -z "${EXIT_CODE// }" && $EXIT_CODE -ne 9 ]];
+                then 
+                        echo "Some error was happened. Line ""$i"" was skipped."
+                        continue
+                fi
+        else
+                USERADD_OPT="$USERADD_OPT""-N "
+        fi
         # GROUPS
         if [[ ! -z "${GROUPS_M// }" ]];
         then
                 USERADD_OPT="$USERADD_OPT""-G ""${GROUPS_M// }"" "
                 # Let's add new group, if they don't exist
                 HANDLED_GR=$(tr , \ <<< "${GROUPS_M// }")
+                BREAK_FLAG=0
                 for CUR_GR in $(echo $HANDLED_GR); do
                         groupadd $CUR_GR > /dev/null 2>&1
+                        EXIT_CODE=$?
+                        if [ $EXIT_CODE -eq 3 ];
+                        then
+                                echo "Group name is invalid. Line ""$i"" was skipped."
+                                BREAK_FLAG=1
+                        fi
+                        if [[ -z "${EXIT_CODE// }" && $EXIT_CODE -ne 9 ]];
+                        then 
+                                echo "Some error was happened. Line ""$i"" was skipped."
+                                BREAK_FLAG=1
+                        fi
                 done
+                if [ $BREAK_FLAG -eq 1 ]
+                then
+                        continue
+                fi
         fi
         # UID
         if [[ ! -z "${UID_M// }" ]];

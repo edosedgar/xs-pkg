@@ -1,1 +1,1 @@
-nedos::video,hi::/home/nedos::/bin/bash
+nedos::video:video::/home/nedos::/bin/bash
