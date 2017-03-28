@@ -1,0 +1,79 @@
+Strace proposal (Google Summer Of Code 2017)
+
+Note: If you are not against, I will follow the guideline you given
+
+-> Name:
+	Edgar Kaziakhmedov
+-> Title of proposal:
+	The advanced syscall information tool.
+-> Abstract of proposal:
+	//TODO
+-> Detailed description of your idea including explanation on why is
+   it innovative and what it will contribute:
+	//TODO
+-> Description of previous work, existing solutions (links to prototypes,
+   bibliography are more than welcome)
+	First of all, I want to improve the informativeness of the ioctl
+	syscall(for the range of requests owned to v4l2). For instance,
+	the existing information about pixel_format does not show the special
+	flags defined in the Linux kernel like V4L2_PIX_FMT_*. Moreover,
+	a current switch in the v4l2 ioctl decoder does not process the
+	full list of requests. But it is a work just for the April.
+	//TODO
+-> Mention the details of your academic studies, any previous work, internships
+	B.Sc. Applied Physics and Mathematics (third-year student)
+	Student of the Department of Radio Engineering and Cybernetics
+	Moscow Institute of Physics and Technology (State University)
+	Relevant computer science courses:
+	computer architecture, operating systems, virtualization, parallel
+	programming, computer networks
+	Additional CS courses:
+	Participant of Intel Lab (virtual machines, introduction to compilators)
+	Participant of Intel Lab (C++ course)
+	Emulation of computer architecture (implementation of CHIP16 CPU
+	commands in Simics)
+-> Any relevant skills that will help you to achieve the goal
+   (programming languages, frameworks)?
+	Advanced GIT knowledge(the commitment to QEMU helped me to achieve it)
+	Advanced C knowledge(I so like C, because it makes me feel the hardware)
+	Extensive experience in working with open-source projects
+	Bash
+	X86-assembly
+	gdb
+	autotools
+	gnu make
+-> Any previous open-source projects (or even previous GSoC) you have contributed to?
+-> Any open-source code of yours that we can check out?
+	1) FUSE-based file system(SFS)
+	https://github.com/edosedgar/LSB_FUSE_SFS
+	Brief description: the main purpose of this project
+	was to implement the file system, which can be ported
+	to the another architecture by rewriting just the block layer.
+	2) The simple binary translator from the own virtual processor
+	to the STM32F407 MCU based Cortex-M4
+	https://github.com/edosedgar/stm8s/tree/master/STM8S105C6T6/Assembler/Project_2
+	3) Development high-performing I/O sub-system for QEMU/KVM
+	Brief Description: the implementation of Parallels format driver
+	and snapshots
+	Research director: Denis Lunev. Head of department in
+	Virtuozzo, Inc and QEMU Maintainer
+	NOTE: take into account that regardless of the project in the
+	development, it does not affect on my commitment to the GSoC
+	program(no more than 5 hours per week). If you are interested
+	I can send out the current patch set to assess progress made.
+	4) Enhanced design for sakura terminal emulator
+	http://bazaar.launchpad.net/~dabisu/sakura/sakura/revision/560
+-> Do you plan to have any other commitments during SoC that may affect you work?
+   Any vacations/holidays planned? Will you be available full time to work on your project?
+	No vacations planned
+	I will be available full time to work at least 40 hours per week.
+	Yes, I plan other commitment, as I was saying, to QEMU
+	(no more than 4 hours per week, it's sort of hobby project)
+
+To sum up, this program is purposed without doubt to get considerable experience
+what it is like to be a part of the large project. And I am applying because I
+have some experience in developing and it is a rare privilege to significantly
+enhance one of the usefull program for developers.
+
+Just so you know, I mentioned the QEMU several times, but I applied just for
+your project.
