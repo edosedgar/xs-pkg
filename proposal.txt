@@ -70,7 +70,7 @@ Note: If you are not against, I will follow the guideline you given
 	*	|
 	*	@>>>> return number of bytes written
 	* etc
-	I am going to use ncurses library to show this printing. Apart from
+	I am going to use ncurses library to show these printings. Apart from
 	showing info in running, the tool will be able to give the syscall's
 	description via command line (in sure in the interactive mode)
 	$ asinfo -l write
