@@ -15,9 +15,9 @@ Note: If you are not against, I will follow the guideline you given
 	2) Write the complementary tool
 
 	It seems like the first way is looking better. Extending an
-	existing format, we will definately make the users confused, as
+	existing format, we will definitely make the users confused, as
 	a backward compatibility will be lost. Moreover, a well-known
-	vim syntax hightlight will be broken. Thus, the second variant is
+	vim syntax highlight will be broken. Thus, the second variant is
 	more preferable. Because, this is well known, that the program
 	should not be overloaded, doing a job well.
 
@@ -83,7 +83,7 @@ Note: If you are not against, I will follow the guideline you given
 	computer architecture, operating systems, virtualization, parallel
 	programming, computer networks
 	Additional CS courses:
-	Participant of Intel Lab (virtual machines, introduction to compilators)
+	Participant of Intel Lab (virtual machines, introduction to compilers)
 	Participant of Intel Lab (C++ course)
 	Emulation of computer architecture (implementation of CHIP16 CPU
 	commands in Simics)
