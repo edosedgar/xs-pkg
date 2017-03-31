@@ -7,19 +7,74 @@ Note: If you are not against, I will follow the guideline you given
 -> Title of proposal:
 	The advanced syscall information tool.
 -> Abstract of proposal:
-	//TODO
+	Everyone accepts that strace is one the most useful program for
+	developers. And to make the output more understandable, I want to
+	improve the informativeness of syscalls. Let's consider two general
+	approaches to the problem:
+	1) Extend the existing strace output
+	2) Write the complementary tool
+
+	It seems like the first way is looking better. Extending an
+	existing format, we will definately make the users confused, as
+	a backward compatibility will be lost. Moreover, a well-known
+	vim syntax hightlight will be broken. Thus, the second variant is
+	more preferable. Because, this is well known, that the program
+	should not be overloaded, doing a job well.
+
+	To sum up, the output is purposed for people and providing all
+	information about syscall(syscall number, meaning of flags, etc) can
+	significantly reduce the debug time.
+
 -> Detailed description of your idea including explanation on why is
    it innovative and what it will contribute:
-	//TODO
+
+	Why is it essential to make an advanced syscall info tool, is not
+	it enough to look up the syscall info in the man page?
+
+	Well, not to mention general users, even a experienced people often
+	need to find the information of syscalls, the number of which
+	amounts to ~350. As confirmation, the retrieval time in man takes
+	around 20 sec(at best) against a few seconds(in case of built-in info).
+	As evident, the look-up time can be greatly saved.
+
 -> Description of previous work, existing solutions (links to prototypes,
    bibliography are more than welcome)
-	First of all, I want to improve the informativeness of the ioctl
-	syscall(for the range of requests owned to v4l2). For instance,
-	the existing information about pixel_format does not show the special
-	flags defined in the Linux kernel like V4L2_PIX_FMT_*. Moreover,
-	a current switch in the v4l2 ioctl decoder does not process the
-	full list of requests. But it is a work just for the April.
-	//TODO
+	First of all, it would be nice to improve the informativeness of
+	the ioctl syscall(for the range of requests owned to v4l2). For
+	instance, the existing information about pixel_format does not show
+	the special flags defined in the Linux kernel like V4L2_PIX_FMT_*.
+	Moreover, a current switch in the v4l2 ioctl decoder does not process
+	the full list of requests. But it is a work just for the April.
+
+	Regarding implementation, in case of advanced syscall info, you will
+	have to type just the following command:
+
+	$ strace %process_name% | asinfo
+
+	After it will be look like that:
+
+	*------------------------------------------------------------------------*
+	*(num of syscall) write(input arguments) -> link to kernel implementation*
+	* -> detailed information about input parameters in the pop-up menu      *
+	*------------------------------------------------------------------------*
+	For instance, write syscall:
+	* 1|write(int fd, const void* buf, size_t count) => ssize_t (src)*
+	*  +----o---> file descriptor fd
+	*	|     fd = 3
+	*       o---> buffer pointer buf
+	*	|     buf = 0x923467654
+	*	|     buf[0] = 0x343, buf[1] = 0x34, /*there will be smart
+	*	|				      alignment */
+	*	o---> number of bytes count
+	*	|     count = 3
+	*	|
+	*	@>>>> return number of bytes written
+	* etc
+	I am going to use ncurses library to show this printing. Apart from
+	showing info in running, the tool will be able to give the syscall's
+	description via command line (in sure in the interactive mode)
+	$ asinfo -l write
+
 -> Mention the details of your academic studies, any previous work, internships
 	B.Sc. Applied Physics and Mathematics (third-year student)
 	Student of the Department of Radio Engineering and Cybernetics
