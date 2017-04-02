@@ -1,7 +1,5 @@
 Strace proposal (Google Summer Of Code 2017)
 
-Note: If you are not against, I will follow the guideline you given
-
 -> Name:
 	Edgar Kaziakhmedov
 -> Title of proposal:
@@ -84,6 +82,9 @@ Note: If you are not against, I will follow the guideline you given
 	Participant of Intel Lab (C++ course)
 	Emulation of computer architecture (implementation of CHIP16 CPU
 	commands in Simics)
+
+	Student’s mentor in the Mail.Ru Group open course – Introduction to
+	Industrial Programming and data structures, C++
 -> Any relevant skills that will help you to achieve the goal
    (programming languages, frameworks)?
 	Advanced GIT knowledge(the commitment to QEMU helped me to achieve it)
