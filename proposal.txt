@@ -69,6 +69,9 @@ Note: If you are not against, I will follow the guideline you given
 	int sys_func(), which prints the various information depended on
 	global flag.
 
+	Besides that, the detailed output can be done by using the ncurses
+	output.
+
 -> Mention the details of your academic studies, any previous work, internships
 	B.Sc. Applied Physics and Mathematics (third-year student)
 	Student of the Department of Radio Engineering and Cybernetics
