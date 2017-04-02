@@ -9,17 +9,25 @@ Note: If you are not against, I will follow the guideline you given
 -> Abstract of proposal:
 	Everyone accepts that strace is one the most useful program for
 	developers. And to make the output more understandable, I want to
-	improve the informativeness of syscalls. Let's consider two general
-	approaches to the problem:
-	1) Extend the existing strace output
-	2) Write the complementary tool
+	improve the informativeness of syscalls. Well, it occurred to me
+	that there are two main approaches:
+	1) Improve the informativeness of the existing strace output
+	2) Write the complementary static query tool
 
-	It seems like the first way is looking better. Extending an
-	existing format, we will definitely make the users confused, as
-	a backward compatibility will be lost. Moreover, a well-known
-	vim syntax highlight will be broken. Thus, the second variant is
-	more preferable. Because, this is well known, that the program
-	should not be overloaded, doing a job well.
+	Let's see which one is more appropriate in the current state of
+	affairs. Certainly, it seems like the first way is looking better,
+	because just typing the following command:
+
+	$ strace %process_name% | asinfo
+
+	we will see the colorful and the informative output. However,
+	parsing messages to make appearance more understandable is quite
+	slow. Furthermore, an absence of the completed JSON output makes
+	the task unsolvable optimally.
+	In the second case, we do not care about these problems, just open
+	one more terminal emulator and type the following command:
+
+	$ asinfo [OPTIONS] write (just one example)
 
 	To sum up, the output is purposed for people and providing all
 	information about syscall(syscall number, meaning of flags, etc) can
@@ -31,49 +39,35 @@ Note: If you are not against, I will follow the guideline you given
 	Why is it essential to make an advanced syscall info tool, is not
 	it enough to look up the syscall info in the man page?
 
-	Well, not to mention general users, even a experienced people often
+	Well, not to mention general users, even an experienced people often
 	need to find the information of syscalls, the number of which
 	amounts to ~350. As confirmation, the retrieval time in man takes
-	around 20 sec(at best) against a few seconds(in case of built-in info).
-	As evident, the look-up time can be greatly saved.
+	about 20 sec(at best) against a few seconds(in case of asinfo tool).
+	Why? Because you request options just you need.
+
+	Ok, let's the consider the main usability of the asinfo tool:
+	1) Find the syscall name by syscall number(and vice versa)
+	$ asinfo -n write
+	$ asinfo -s 1
+	2) Using the '-f' option you can get all information about syscall
+	$ asinfo -f write
+	$ asinfo -f 1
+	3) But if you want just an info about taken arguments:
+	$ asinfo -a write|1
+	4) May be a link to implementation?
+	$ asinfo -k write|1
+	5) Sometimes, it is necessary to print the changelog of the syscall
+	$ asinfo -c write
+	etc
 
 -> Description of previous work, existing solutions (links to prototypes,
    bibliography are more than welcome)
-	First of all, it would be nice to improve the informativeness of
-	the ioctl syscall(for the range of requests owned to v4l2). For
-	instance, the existing information about pixel_format does not show
-	the special flags defined in the Linux kernel like V4L2_PIX_FMT_*.
-	Moreover, a current switch in the v4l2 ioctl decoder does not process
-	the full list of requests. But it is a work just for the April.
 
-	Regarding implementation, in case of advanced syscall info, you will
-	have to type just the following command:
-
-	$ strace %process_name% | asinfo
-
-	After it will be look like that:
-
-	*------------------------------------------------------------------------*
-	*(num of syscall) write(input arguments) -> link to kernel implementation*
-	* -> detailed information about input parameters in the pop-up menu      *
-	*------------------------------------------------------------------------*
-	For instance, write syscall:
-	* 1|write(int fd, const void* buf, size_t count) => ssize_t (src)*
-	*  +----o---> file descriptor fd
-	*	|     fd = 3
-	*       o---> buffer pointer buf
-	*	|     buf = 0x923467654
-	*	|     buf[0] = 0x343, buf[1] = 0x34, /*there will be smart
-	*	|				      alignment */
-	*	o---> number of bytes count
-	*	|     count = 3
-	*	|
-	*	@>>>> return number of bytes written
-	* etc
-	I am going to use ncurses library to show these printings. Apart from
-	showing info in running, the tool will be able to give the syscall's
-	description via command line (in sure in the interactive mode)
-	$ asinfo -l write
+	The basic functionality can be done just using the information
+	in the syscallent.h file. As the syscallent.h consists of array of
+	struct_sysent, we can implement for each syscall the function
+	int sys_func(), which prints the various information depended on
+	global flag.
 
 -> Mention the details of your academic studies, any previous work, internships
 	B.Sc. Applied Physics and Mathematics (third-year student)
