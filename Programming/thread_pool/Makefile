@@ -1,16 +1,28 @@
-CFLAGS:=-Wall -pthread -Wextra -g3 -O3 -std=gnu99 -march=haswell
-LDLIBS:=-lm 
-PROJECT_NAME:=integral
-SOURCE:=main.c
+CFLAGS = -D_REENTRANT -Wall -pedantic -Isrc -g3 -O3
+LDLIBS = -lpthread
 
-.PHONY: clean
+TARGETS = tests/test libthread_pool.so libthread_pool.a
 
-$(PROJECT_NAME): $(SOURCE)
-	$(CC) $(CFLAGS) $(LDLIBS)-o $@ $<
+all: $(TARGETS)
+
+tests/test: tests/test.o src/thread_pool.o
+src/threadpool.o: src/thread_pool.c src/thread_pool.h
+tests/test.o: tests/test.c src/thread_pool.h
+
+shared: libthread_pool.so
+static: libthread_pool.a
+
+libthread_pool.so: src/thread_pool.c src/thread_pool.h
+	$(CC) -shared -fPIC ${CFLAGS} -o $@ $< ${LDLIBS}
+
+src/libthread_pool.o: src/thread_pool.c src/thread_pool.h
+	$(CC) -c -fPIC ${CFLAGS} -o $@ $<
+
+libthread_pool.a: src/libthread_pool.o
+	ar rcs $@ $^
 
 clean:
-	rm -rf *.o $(PROJECT_NAME)
+	rm -f $(TARGETS) *~ */*~ */*.o
 
-
-
-
+test: $(TARGETS)
+	./tests/test
