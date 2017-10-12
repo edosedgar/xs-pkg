@@ -1,0 +1,7 @@
+[Unit]
+Description=Google Chrome Backup service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /home/maxwell/localGIT/xs-pkg/BashScripts/google-chrome-scripts/make-backup.sh
+User=maxwell

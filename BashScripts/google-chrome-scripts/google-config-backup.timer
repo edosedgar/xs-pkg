@@ -1,0 +1,9 @@
+[Unit]
+Description=Google Chrome backup timer
+
+[Timer]
+OnUnitActiveSec=10m
+OnBootSec=0s
+
+[Install]
+WantedBy=timers.target
