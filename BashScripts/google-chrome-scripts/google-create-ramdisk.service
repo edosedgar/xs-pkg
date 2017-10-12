@@ -3,7 +3,8 @@ Description=Google Chrome Backup service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh /home/maxwell/localGIT/xs-pkg/BashScripts/google-chrome-scripts/make-backup.sh
+ExecStart=/bin/sh /home/maxwell/localGIT/xs-pkg/BashScripts/google-chrome-scripts/make-ramdisks.sh
+ExecStop=/bin/sh /home/maxwell/localGIT/xs-pkg/BashScripts/google-chrome-scripts/make-backup.sh
 User=maxwell
 
 [Install]
