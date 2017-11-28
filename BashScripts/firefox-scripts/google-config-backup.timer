@@ -1,0 +1,9 @@
+[Unit]
+Description=Firefox backup timer
+
+[Timer]
+OnUnitActiveSec=30m
+OnBootSec=30m
+
+[Install]
+WantedBy=timers.target

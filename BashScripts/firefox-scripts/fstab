@@ -1,0 +1,14 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda5 during installation
+UUID=67e1b13f-6dae-4b05-8bd7-8c2a039113a5	/               btrfs   noatime,compress	0       0
+# /boot/efi was on /dev/sda1 during installation
+UUID=DED0-9DA4					/boot/efi       vfat    umask=0077      	0       1
+# /home was on /dev/sda7 during installation
+UUID=96b8dee6-9753-4555-8997-059c5722b036	/home           btrfs   noatime         	0       0
+tmpfs /home/maxwell/google-chrome-cc tmpfs noatime,nodiratime,nodev,nosuid,uid=1000,gid=1000,mode=0700,size=512M 0 0
