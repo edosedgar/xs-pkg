@@ -70,19 +70,26 @@ def householder_qr(A): # 7 pts
 # INPUT:  G - np.ndarray
 # OUTPUT: A - np.ndarray (of size G.shape)
 def pagerank_matrix(G): # 5 pts
+    sparse = 0
     if sp.sparse.issparse(G):
-        G = sp.sparse.csr_matrix(G).astype(float)
+        G = G.astype(np.float64)
+        diags = np.squeeze(np.asarray(np.sum(G, axis=1)))
+        diags = [1.0/x if x != 0 else 1 for x in diags]
+        D = sp.sparse.diags(diags, 0, format='lil', dtype=np.float64)
+        return G.T.dot(D)
     else:
-        G = G.astype(float)
-    G_sum = np.squeeze(np.asarray(G.sum(axis=0)))
-    for col in range(G.shape[0]):
-        if G_sum[col] == 0:
-            #G[:,col] = np.repeat(1.0/G.shape[0], len(G_sum))
-            pass
+        A = G.astype(float)
+
+    for col in range(A.shape[0]):
+        nzi = G[:,col].nonzero()[0]
+        row_sum = np.sum(G[nzi, col])
+        if row_sum == 0:
+            if (sparse == 0):
+                A[:,col] = 1.0/G.shape[0]
         else:
-            G[:,col] = G[:,col] * 1.0/G_sum[col]
-    # enter your code here
-    return G
+            #A[G[:,col].nonzero()[0],col] = 1.0/row_sum
+            A[nzi, col] = 1.0/row_sum
+    return A
 
 
 # INPUT:  A - np.ndarray (2D), x0 - np.ndarray (1D), num_iter -
@@ -94,16 +101,16 @@ def power_method(A, x0, num_iter): # 5 pts
     if (x0.shape[1] != 1):
         x0 = x0.T
         rev = 1
-    x_k = x0.copy() / np.linalg.norm(x0, 2)
+    x_k = x0 / np.linalg.norm(x0, 2)
     res = np.zeros(num_iter + 1)
-    l = np.dot(np.dot(A, x_k).T, x_k)
-    res[0] = np.linalg.norm(A @ x_k - x_k * l, 2)
+    l = A.dot(x_k).T.dot(x_k)
+    res[0] = np.linalg.norm(A.dot(x_k) - x_k * l, 2)
     for k in range(1, num_iter + 1):
-        x_k = A @ x_k
+        x_k = A.dot(x_k)
         x_k = x_k / np.linalg.norm(x_k, 2)
-        l = np.dot((A @ x_k).T, x_k)
-        res[k] = np.linalg.norm(A @ x_k - x_k * l, 2)
-    # enter your code here
+        Axk = A.dot(x_k)
+        l = Axk.T.dot(x_k)
+        res[k] = np.linalg.norm(Axk - x_k * l, 2)
     if (rev == 1):
         x_k = x_k.T
     return x_k, l, res
@@ -114,13 +121,8 @@ def power_method(A, x0, num_iter): # 5 pts
 # OUTPUT: y - np.ndarray (1D, size of x)
 def pagerank_matvec(A, d, x): # 2 pts
     rev = 0
-    if sp.sparse.issparse(A):
-        A = sp.sparse.csr_matrix(A).astype(float)
-    else:
-        A = A.astype(float)
-    sum_x = sum(x)
-    val = (1-d)/A.shape[0]
-    y = [d * np.dot(A[k,:], x) + val * sum_x for k in range(A.shape[0])]
+    A = A.astype(float)
+    y = d * A.dot(x) + (1-d)/A.shape[0] * np.sum(x)
     return y
 
 def return_words():
