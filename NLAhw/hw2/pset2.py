@@ -50,22 +50,58 @@ def band_lu(diag_broadcast, n): # 5 pts
 # INPUT : rectangular matrix A
 # OUTPUT: matrices Q - orthogonal and R - upper triangular such that A = QR
 def gram_schmidt_qr(A): # 5 pts
-    # your code is here
+    Q = np.zeros_like(A)
+    R = np.zeros((A.shape[1], A.shape[1]))
+    R[0,0], Q[:,0] = 1, A[:,0]
+
+    for k in range(1, A.shape[1]):
+        v, r = A[:, k], R[:, k]
+        r[k] = 1
+        r[:k] = [(np.dot(v, Q[:, i])) / (np.dot(Q[:, i], Q[:, i])) for i in range(k)]
+        Q[:, k] = v - np.sum(r[:k] * Q[:,:k], axis=1)
+    #Normalization
+    for k in range(A.shape[1]):
+        norm = np.linalg.norm(Q[:,k], 2)
+        Q[:,k], R[k,:] = Q[:,k] / norm, R[k,:] * norm
     return Q, R
 
 # INPUT : rectangular matrix A
 # OUTPUT: matrices Q - orthogonal and R - upper triangular such that A = QR
 def modified_gram_schmidt_qr(A): # 5 pts
-    # your code is here
-    return Q, R
+    n = A.shape[1] + 1
+    Q = np.zeros((n, n))
+    R, V = Q.copy(), Q.copy()
+    V[1:,1:] = A
 
+    for k in range(1, n):
+        R[k][k] = np.linalg.norm(V[:,k], 2)
+        Q[:,k] = V[:,k] / R[k][k]
+        for i in range(k + 1, n):
+            R[k][i] = np.dot(Q[:,k].T, V[:,i])
+            V[:,i] -= R[k][i] * Q[:,k]
+
+    return Q[1:, 1:], R[1:, 1:]
 
 # INPUT : rectangular matrix A
 # OUTPUT: matrices Q - orthogonal and R - upper triangular such that A=QR
 def householder_qr(A): # 7 pts
-    # your code is here
-    return Q, R
+    m, n = A.shape
+    e, Q, R = np.zeros(A.shape[0]), np.identity(A.shape[0]), A
+    e[0] = 1
 
+    for k in range(n):
+        x = R[k:, k]
+        x_norm = np.linalg.norm(x, 2)
+        if (x[0] >= 0):
+            v = x + x[0] * x_norm * e[:m-k]
+        else:
+            v = x - x[0] * x_norm * e[:m-k]
+        v /= np.linalg.norm(v, 2)
+        H = np.identity(m)
+        H[k:,k:] = np.identity(m-k) - 2 * np.outer(v, v)
+        Q, R = np.dot(H,Q), np.dot(H, R)
+
+    return Q.T, R
 
 # INPUT:  G - np.ndarray
 # OUTPUT: A - np.ndarray (of size G.shape)
@@ -84,8 +120,7 @@ def pagerank_matrix(G): # 5 pts
         nzi = G[:,col].nonzero()[0]
         row_sum = np.sum(G[nzi, col])
         if row_sum == 0:
-            if (sparse == 0):
-                A[:,col] = 1.0/G.shape[0]
+            A[:,col] = 1.0/G.shape[0]
         else:
             #A[G[:,col].nonzero()[0],col] = 1.0/row_sum
             A[nzi, col] = 1.0/row_sum
@@ -126,7 +161,7 @@ def pagerank_matvec(A, d, x): # 2 pts
     return y
 
 def return_words():
-    # insert the (word, cosine_similarity) tuples
+    # insert the (word, cosnp.linalg.norm(x, 2) *np.linalg.norm(x, 2) *ine_similarity) tuples
     # for the words 'numerical', 'linear', 'algebra' words from the notebook
     # into the corresponding lists below
     # words_and_cossim = [('word1', 'cossim1'), ...]
