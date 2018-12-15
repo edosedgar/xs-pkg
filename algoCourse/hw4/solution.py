@@ -41,6 +41,12 @@ class Node:
         return out
     def touch(self):
         self.touched = 1
+    def reset(self):
+        self.touched = 0
+        if (self.left is not None):
+            self.left.reset()
+        if (self.right is not None):
+            self.right.reset()
 
 # Build tree from points given in miners
 def kdtree_build(miners, depth=0):
@@ -101,7 +107,7 @@ for i in range(queries_num_max):
     rect_num_max = int(points_queries.readline())
     for j in range(rect_num_max):
         query.append(tuple([int(a) for a in points_queries.readline().split()]))
-    tree = kdtree_build(points)
+    tree.reset()
     power = all_miners_power(tree, query)
     if (i != queries_num_max - 1):
         answer_file.write(str(power) + '\n')
