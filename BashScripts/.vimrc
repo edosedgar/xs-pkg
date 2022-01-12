@@ -1,25 +1,25 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#begin()
 
 "call vundle#rc()
 
-Plugin 'tpope/vim-fugitive'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+"Plugin 'tpope/vim-fugitive'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
 "Bundle 'rails.vim'
 "Bundle 'vim-swift'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Bundle 'erickzanardo/vim-xclip'
+"Plugin 'bling/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
+"Bundle 'erickzanardo/vim-xclip'
 "Plugin 'altercation/vim-colors-solarized'
-Plugin 'SyntaxAttr.vim'
-Plugin 'josuegaleas/jay'
-Plugin 'tagbar'
+"Plugin 'SyntaxAttr.vim'
+"Plugin 'josuegaleas/jay'
+"Plugin 'tagbar'
 
-call vundle#end()
+"call vundle#end()
 
 "filetype plugin indent on
 :set smartindent
@@ -43,7 +43,7 @@ let g:rehash256 = 1
 "colorscheme molokai
 "let g:molokai_original = 1
 set background=light
-colorscheme jay
+"colorscheme jay
 if &term =~ '256color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
